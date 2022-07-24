@@ -1,0 +1,80 @@
+[
+    {
+        "DisplayName": "Players",
+        "Category": "setup",
+        "Description": "Number of players allowed to join. 1-250",
+        "Keywords": "players slots",
+        "FieldName": "slots",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "ParamFieldName": "slots",
+        "IncludeInCommandLine": true,
+        "DefaultValue": "32",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Password",
+        "Category": "setup",
+        "Description": "password to join the server",
+        "Keywords": "password",
+        "FieldName": "password",
+        "InputType": "password",
+        "IsFlagArgument": false,
+        "ParamFieldName": "password",
+        "IncludeInCommandLine": true,
+        "DefaultValue": "",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "seed",
+        "Category": "setup",
+        "Description": "determines world generation",
+        "Keywords": "seed",
+        "FieldName": "seed",
+        "InputType": "text",
+        "IsFlagArgument": false,
+        "ParamFieldName": "seed",
+        "IncludeInCommandLine": true,
+        "DefaultValue": "Powered by AMP",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Spawn Guide House",
+        "Category": "setup",
+        "Description": "y for yes, n for no",
+        "Keywords": "guide house",
+        "FieldName": "guide",
+        "InputType": "text",
+        "IsFlagArgument": false,
+        "ParamFieldName": "guide",
+        "IncludeInCommandLine": true,
+        "DefaultValue": "y",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "World Name",
+        "Category": "setup",
+        "Description": "world to load at startup.  should be a single word, with no spaces.",
+        "Keywords": "world",
+        "FieldName": "world",
+        "InputType": "text",
+        "IsFlagArgument": false,
+        "ParamFieldName": "world",
+        "IncludeInCommandLine": true,
+        "DefaultValue": "world",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "MOTD",
+        "Category": "variables",
+        "Description": "Displayed on join",
+        "Keywords": "motd message",
+        "FieldName": "motd",
+        "InputType": "text",
+        "IsFlagArgument": false,
+        "ParamFieldName": "motd",
+        "IncludeInCommandLine": true,
+        "DefaultValue": "Welcome to Necesse",
+        "EnumValues": {}
+    }
+]
