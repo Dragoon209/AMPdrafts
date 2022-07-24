@@ -1,7 +1,7 @@
 [
     {
         "DisplayName": "Players",
-        "Category": "setup",
+        "Category": "Server Config",
         "Description": "Number of players allowed to join. 1-250",
         "Keywords": "players slots",
         "FieldName": "slots",
@@ -14,7 +14,7 @@
     },
     {
         "DisplayName": "Password",
-        "Category": "setup",
+        "Category": "Server Config",
         "Description": "password to join the server",
         "Keywords": "password",
         "FieldName": "password",
@@ -23,11 +23,12 @@
         "ParamFieldName": "password",
         "IncludeInCommandLine": true,
         "DefaultValue": "",
-        "EnumValues": {}
+        "EnumValues": {},
+        "SkipIfEmpty": true
     },
     {
         "DisplayName": "seed",
-        "Category": "setup",
+        "Category": "First Run Setup",
         "Description": "determines world generation",
         "Keywords": "seed",
         "FieldName": "seed",
@@ -36,11 +37,12 @@
         "ParamFieldName": "seed",
         "IncludeInCommandLine": true,
         "DefaultValue": "Powered by AMP",
-        "EnumValues": {}
+        "EnumValues": {},
+        "SkipIfEmpty": true
     },
     {
         "DisplayName": "Spawn Guide House",
-        "Category": "setup",
+        "Category": "First Run Setup",
         "Description": "y for yes, n for no",
         "Keywords": "guide house",
         "FieldName": "guide",
@@ -49,11 +51,12 @@
         "ParamFieldName": "guide",
         "IncludeInCommandLine": true,
         "DefaultValue": "y",
-        "EnumValues": {}
+        "EnumValues": {},
+        "SkipIfEmpty": true
     },
     {
         "DisplayName": "World Name",
-        "Category": "setup",
+        "Category": "Server Config",
         "Description": "world to load at startup.  should be a single word, with no spaces.",
         "Keywords": "world",
         "FieldName": "world",
@@ -66,7 +69,7 @@
     },
     {
         "DisplayName": "MOTD",
-        "Category": "variables",
+        "Category": "Server Config",
         "Description": "Displayed on join",
         "Keywords": "motd message",
         "FieldName": "motd",
@@ -75,6 +78,7 @@
         "ParamFieldName": "motd",
         "IncludeInCommandLine": true,
         "DefaultValue": "Welcome to Necesse",
-        "EnumValues": {}
+        "EnumValues": {},
+        "SkipIfEmpty": true
     }
 ]
