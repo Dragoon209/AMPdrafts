@@ -55,7 +55,6 @@
             "y": "yes,
             "n": "no"
         },
-        "SkipIfEmpty": true
     },
     {
         "DisplayName": "World Name",

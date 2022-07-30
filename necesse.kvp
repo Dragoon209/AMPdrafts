@@ -1,7 +1,7 @@
 Meta.Author=ThisIslandEarth
 Meta.ConfigManifest=necesseconfig.json
 Meta.ConfigRoot=necesse.kvp
-Meta.Description=
+Meta.Description=Necesse is a top-down sandbox action-adventure game in a procedurally generated world. Progress your character's gear and settlement through fighting, mining, exploring, crafting, trading and more!
 Meta.DisplayImageSource=steam:1169040
 Meta.DisplayName=Necesse
 Meta.EndpointURIFormat=
@@ -10,6 +10,7 @@ Meta.URL=https://necessegame.com/
 App.ApplicationIPBinding=0.0.0.0
 App.ApplicationPort1=14159
 App.DisplayName=Necesse
+App.MaxUsers=20
 App.RootDir=./necesse/
 App.BaseDirectory=./necesse/1169370/
 App.ExecutableLinux=1169370/./jre/bin/java
