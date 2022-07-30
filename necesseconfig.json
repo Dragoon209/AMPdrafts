@@ -52,8 +52,8 @@
         "IncludeInCommandLine": true,
         "Placeholder": "y",
         "EnumValues": {
-            "y": "yes,
-            "n": "no"
+         "y": "yes",
+         "n": "no"
         },
     },
     {
