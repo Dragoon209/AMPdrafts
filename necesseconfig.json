@@ -4,12 +4,12 @@
         "Category": "Server Config",
         "Description": "Number of players allowed to join. 1-250",
         "Keywords": "players slots",
-        "FieldName": "slots",
+        "FieldName": "$MaxUsers",
         "InputType": "number",
         "IsFlagArgument": false,
         "ParamFieldName": "slots",
         "IncludeInCommandLine": true,
-        "DefaultValue": "32",
+        "DefaultValue": "20",
         "EnumValues": {}
     },
     {
@@ -36,22 +36,25 @@
         "IsFlagArgument": false,
         "ParamFieldName": "seed",
         "IncludeInCommandLine": true,
-        "DefaultValue": "Powered by AMP",
+        "Placeholder": "Powered by AMP",
         "EnumValues": {},
         "SkipIfEmpty": true
     },
     {
         "DisplayName": "Spawn Guide House",
         "Category": "First Run Setup",
-        "Description": "y for yes, n for no",
+        "Description": "Should a guide house be spawned on a new world?",
         "Keywords": "guide house",
         "FieldName": "guide",
-        "InputType": "text",
+        "InputType": "enum",
         "IsFlagArgument": false,
         "ParamFieldName": "guide",
         "IncludeInCommandLine": true,
-        "DefaultValue": "y",
-        "EnumValues": {},
+        "Placeholder": "y",
+        "EnumValues": {
+            "y": "yes,
+            "n": "no"
+        },
         "SkipIfEmpty": true
     },
     {
