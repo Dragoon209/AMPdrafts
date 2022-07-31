@@ -29,14 +29,14 @@
     {
         "DisplayName": "seed",
         "Category": "First Run Setup",
-        "Description": "determines world generation",
+        "Description": "Determines world generation.  Leave blank for a random seed.",
         "Keywords": "seed",
         "FieldName": "seed",
-        "InputType": "text",
+        "InputType": "number",
         "IsFlagArgument": false,
         "ParamFieldName": "seed",
         "IncludeInCommandLine": true,
-        "Placeholder": "Powered by AMP",
+        "Placeholder": "1234567890",
         "EnumValues": {},
         "SkipIfEmpty": true
     },
