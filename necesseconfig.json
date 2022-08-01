@@ -37,7 +37,6 @@
         "ParamFieldName": "seed",
         "IncludeInCommandLine": true,
         "Placeholder": "1234567890",
-        "EnumValues": {},
         "SkipIfEmpty": true
     },
     {
@@ -47,7 +46,7 @@
         "Keywords": "guide house",
         "FieldName": "guide",
         "InputType": "checkbox",
-        "IsFlagArgument": true,
+        "IsFlagArgument": false,
         "ParamFieldName": "guide",
         "IncludeInCommandLine": true,
         "DefaultValue": "y",
