@@ -47,13 +47,13 @@
         "Keywords": "guide house",
         "FieldName": "guide",
         "InputType": "checkbox",
-        "IsFlagArgument": false,
+        "IsFlagArgument": true,
         "ParamFieldName": "guide",
         "IncludeInCommandLine": true,
-        "Placeholder": "y",
+        "DefaultValue": "y",
         "EnumValues": {
-         "y": "yes",
-         "n": "no"
+         "False": "n",
+         "True": "y"
         },
     },
     {
