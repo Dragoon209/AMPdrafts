@@ -36,7 +36,7 @@
         "IsFlagArgument": false,
         "ParamFieldName": "seed",
         "IncludeInCommandLine": true,
-        "Placeholder": "1234567890",
+        "DefaultValue": "",
         "SkipIfEmpty": true
     },
     {
