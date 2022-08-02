@@ -29,10 +29,10 @@
     {
         "DisplayName": "Seed",
         "Category": "First Run Setup",
-        "Description": "Determines world generation.  Leave blank for a random seed.",
+        "Description": "Determines world generation. Entry should be restricted to just a number.  Leave blank for a random seed.",
         "Keywords": "seed",
         "FieldName": "seed",
-        "InputType": "number",
+        "InputType": "text",
         "IsFlagArgument": false,
         "ParamFieldName": "seed",
         "IncludeInCommandLine": true,
