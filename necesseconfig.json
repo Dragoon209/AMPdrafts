@@ -1,7 +1,7 @@
 [
     {
         "DisplayName": "Players",
-        "Category": "Server Config",
+        "Category": "Server Settings",
         "Description": "Number of players allowed to join. Number between 1-250.",
         "Keywords": "players slots",
         "FieldName": "$MaxUsers",
@@ -10,11 +10,12 @@
         "ParamFieldName": "slots",
         "IncludeInCommandLine": true,
         "DefaultValue": "20",
-        "EnumValues": {}
+        "EnumValues": {},
+        "Suffix":"players"
     },
     {
         "DisplayName": "Password",
-        "Category": "Server Config",
+        "Category": "Server Settings",
         "Description": "Password to join the server.",
         "Keywords": "password",
         "FieldName": "password",
@@ -28,8 +29,8 @@
     },
     {
         "DisplayName": "Seed",
-        "Category": "First Run Setup",
-        "Description": "Determines world generation.  Leave blank for a random seed.",
+        "Category": "Server Settings",
+        "Description": "Only used when generating a new world. Leave blank for a random seed.",
         "Keywords": "seed",
         "FieldName": "seed",
         "InputType": "number",
@@ -41,8 +42,8 @@
     },
     {
         "DisplayName": "Spawn Guide House",
-        "Category": "First Run Setup",
-        "Description": "If checked, a guide house will be added during world generation.",
+        "Category": "Server Settings",
+        "Description": "Only used when generating a new world. If checked, a guide house will be added during world generation.",
         "Keywords": "guide house",
         "FieldName": "guide",
         "InputType": "checkbox",
@@ -53,11 +54,11 @@
         "EnumValues": {
          "False": "n",
          "True": "y"
-        },
+        }
     },
     {
         "DisplayName": "World Name",
-        "Category": "Server Config",
+        "Category": "Server Settings",
         "Description": "The world file to load at startup.  Recommended to be a single word.",
         "Keywords": "world",
         "FieldName": "world",
@@ -70,7 +71,7 @@
     },
     {
         "DisplayName": "MOTD",
-        "Category": "Server Config",
+        "Category": "Server Settings",
         "Description": "Message to be displayed on server join.",
         "Keywords": "motd message",
         "FieldName": "motd",
