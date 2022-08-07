@@ -7,6 +7,7 @@
         "FieldName": "$MaxUsers",
         "InputType": "number",
         "IsFlagArgument": false,
+        "Required": true,
         "ParamFieldName": "slots",
         "IncludeInCommandLine": true,
         "DefaultValue": "20",
@@ -22,7 +23,7 @@
         "InputType": "password",
         "IsFlagArgument": false,
         "ParamFieldName": "password",
-        "IncludeInCommandLine": true,
+        "IncludeInCommandLine": false,
         "DefaultValue": "",
         "EnumValues": {},
         "SkipIfEmpty": true
@@ -64,9 +65,10 @@
         "Keywords": "world",
         "FieldName": "world",
         "InputType": "text",
+        "Required": true,
         "IsFlagArgument": false,
         "ParamFieldName": "world",
-        "IncludeInCommandLine": true,
+        "IncludeInCommandLine": false,
         "DefaultValue": "world",
         "EnumValues": {}
     },
@@ -79,7 +81,7 @@
         "InputType": "text",
         "IsFlagArgument": false,
         "ParamFieldName": "motd",
-        "IncludeInCommandLine": true,
+        "IncludeInCommandLine": false,
         "DefaultValue": "Welcome to Necesse",
         "EnumValues": {},
         "SkipIfEmpty": true
