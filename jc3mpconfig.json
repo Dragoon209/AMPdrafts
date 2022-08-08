@@ -8,7 +8,7 @@
         "InputType": "number",
         "IsFlagArgument": false,
         "Required": true,
-        "ParamFieldName": "players",
+        "ParamFieldName": "maxplayers",
         "IncludeInCommandLine": true,
         "DefaultValue": "20",
         "EnumValues": {},
@@ -25,8 +25,20 @@
         "ParamFieldName": "password",
         "IncludeInCommandLine": false,
         "DefaultValue": "",
-        "EnumValues": {},
-        "SkipIfEmpty": true
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Description",
+        "Category": "Server Settings",
+        "Description": "Displayed in the server browser.",
+        "Keywords": "description",
+        "FieldName": "description",
+        "InputType": "text",
+        "IsFlagArgument": false,
+        "ParamFieldName": "description",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "Powered By Amp",
+        "EnumValues": {}
     },
     {
         "DisplayName": "Tick Rate",
@@ -36,22 +48,33 @@
         "FieldName": "tickrate",
         "InputType": "number",
         "IsFlagArgument": false,
-        "Required": true,
-        "ParamFieldName": "tickrate",
-        "IncludeInCommandLine": false,
+        "ParamFieldName": "maxTickRate",
         "DefaultValue": "60",
-        "Suffix":"ticks"
+        "Suffix":"ticks per second",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Name",
+        "Category": "Server Settings",
+        "Description": "Displayed in the server browser.",
+        "Keywords": "name",
+        "FieldName": "name",
+        "InputType": "text",
+        "IsFlagArgument": false,
+        "ParamFieldName": "name",
+        "DefaultValue": "JC3MP-AMP",
+        "EnumValues": {}
     },
     {
         "DisplayName": "Required DLCs",
         "Category": "Server Settings",
-        "Description": "Array of DLCs (AppID number).",
-        "Keywords": "DLC list",
-        "FieldName": "dlcs",
+        "Description": "Comma separated list of owned DLC IDs required to join.  Leave this blank to not require any DLCs to join.",
+        "Keywords": "dlcs",
+        "FieldName": "requiredDLC",
         "InputType": "text",
         "IsFlagArgument": false,
-        "ParamFieldName": "dlcs",
-        "IncludeInCommandLine": false,
-        "DefaultValue": ""
+        "ParamFieldName": "requiredDLC",
+        "DefaultValue": "",
+        "EnumValues": {}
     }
 ]
