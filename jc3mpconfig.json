@@ -25,8 +25,7 @@
         "ParamFieldName": "password",
         "IncludeInCommandLine": false,
         "DefaultValue": "",
-        "EnumValues": {},
-        "SkipIfEmpty": true
+        "EnumValues": {}
     },
     {
         "DisplayName": "Description",
@@ -38,7 +37,8 @@
         "IsFlagArgument": false,
         "ParamFieldName": "description",
         "IncludeInCommandLine": false,
-        "DefaultValue": "Powered By Amp"
+        "DefaultValue": "Powered By Amp",
+        "EnumValues": {}
     },
     {
         "DisplayName": "Tick Rate",
@@ -50,7 +50,8 @@
         "IsFlagArgument": false,
         "ParamFieldName": "maxTickRate",
         "DefaultValue": "60",
-        "Suffix":"ticks per second"
+        "Suffix":"ticks per second",
+        "EnumValues": {}
     },
     {
         "DisplayName": "Name",
@@ -61,7 +62,8 @@
         "InputType": "text",
         "IsFlagArgument": false,
         "ParamFieldName": "name",
-        "DefaultValue": "JC3MP-AMP"
+        "DefaultValue": "JC3MP-AMP",
+        "EnumValues": {}
     },
     {
         "DisplayName": "Required DLCs",
@@ -72,6 +74,7 @@
         "InputType": "text",
         "IsFlagArgument": false,
         "ParamFieldName": "requiredDLC",
-        "DefaultValue": ""
+        "DefaultValue": "",
+        "EnumValues": {}
     }
 ]
