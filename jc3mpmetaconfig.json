@@ -1,18 +1,10 @@
 [
     {
-        "announce": false,
-        "description": "",
-        "host": "0.0.0.0",
-        "httpPort": 4203,
-        "logLevel": 7,
-        "logo": "",
-        "maxPlayers": 32,
-        "maxTickRate": 60,
-        "name": "",
-        "password": "",
-        "port": 4200,
-        "queryPort": 4201,
-        "requiredDLC": [],
-        "steamPort": 4202
+        "ConfigFile": "config.json",
+            //If AutoMap is enabled, it is required that the file alreaady exists for AMP to use as a template.
+            //AMP will then automatically map the field values based on the ParamFieldName. You can use 
+            //The JPath syntax (foo.bar.baz) to use if you need to access a nested structure.
+        "AutoMap": true,
+        "ConfigType":"json"
     }
-]
+ ]

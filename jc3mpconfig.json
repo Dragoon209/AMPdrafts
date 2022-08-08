@@ -8,7 +8,7 @@
         "InputType": "number",
         "IsFlagArgument": false,
         "Required": true,
-        "ParamFieldName": "players",
+        "ParamFieldName": "maxplayers",
         "IncludeInCommandLine": true,
         "DefaultValue": "20",
         "EnumValues": {},
@@ -29,6 +29,18 @@
         "SkipIfEmpty": true
     },
     {
+        "DisplayName": "Description",
+        "Category": "Server Settings",
+        "Description": "Displayed in the server browser.",
+        "Keywords": "description",
+        "FieldName": "description",
+        "InputType": "text",
+        "IsFlagArgument": false,
+        "ParamFieldName": "description",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "Powered By Amp"
+    },
+    {
         "DisplayName": "Tick Rate",
         "Category": "Server Settings",
         "Description": "Maxium FPS for the server (default is 60).",
@@ -36,22 +48,30 @@
         "FieldName": "tickrate",
         "InputType": "number",
         "IsFlagArgument": false,
-        "Required": true,
-        "ParamFieldName": "tickrate",
-        "IncludeInCommandLine": false,
+        "ParamFieldName": "maxTickRate",
         "DefaultValue": "60",
-        "Suffix":"ticks"
+        "Suffix":"ticks per second"
+    },
+    {
+        "DisplayName": "Name",
+        "Category": "Server Settings",
+        "Description": "Displayed in the server browser.",
+        "Keywords": "name",
+        "FieldName": "name",
+        "InputType": "text",
+        "IsFlagArgument": false,
+        "ParamFieldName": "name",
+        "DefaultValue": "JC3MP-AMP"
     },
     {
         "DisplayName": "Required DLCs",
         "Category": "Server Settings",
-        "Description": "Array of DLCs (AppID number).",
-        "Keywords": "DLC list",
-        "FieldName": "dlcs",
+        "Description": "Comma separated list of owned DLC IDs required to join.  Leave this blank to not require any DLCs to join.",
+        "Keywords": "dlcs",
+        "FieldName": "requiredDLC",
         "InputType": "text",
         "IsFlagArgument": false,
-        "ParamFieldName": "dlcs",
-        "IncludeInCommandLine": false,
+        "ParamFieldName": "requiredDLC",
         "DefaultValue": ""
     }
 ]
