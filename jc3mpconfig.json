@@ -1,0 +1,57 @@
+[
+    {
+        "DisplayName": "Players",
+        "Category": "Server Settings",
+        "Description": "Number of players allowed to join.",
+        "Keywords": "players",
+        "FieldName": "$MaxUsers",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "Required": true,
+        "ParamFieldName": "players",
+        "IncludeInCommandLine": true,
+        "DefaultValue": "20",
+        "EnumValues": {},
+        "Suffix":"players"
+    },
+    {
+        "DisplayName": "Password",
+        "Category": "Server Settings",
+        "Description": "Password to join the server.",
+        "Keywords": "password",
+        "FieldName": "password",
+        "InputType": "password",
+        "IsFlagArgument": false,
+        "ParamFieldName": "password",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "",
+        "EnumValues": {},
+        "SkipIfEmpty": true
+    },
+    {
+        "DisplayName": "Tick Rate",
+        "Category": "Server Settings",
+        "Description": "Maxium FPS for the server (default is 60).",
+        "Keywords": "tickrate",
+        "FieldName": "tickrate",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "Required": true,
+        "ParamFieldName": "tickrate",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "60",
+        "Suffix":"ticks"
+    },
+    {
+        "DisplayName": "Required DLCs",
+        "Category": "Server Settings",
+        "Description": "Array of DLCs (AppID number).",
+        "Keywords": "DLC list",
+        "FieldName": "dlcs",
+        "InputType": "text",
+        "IsFlagArgument": false,
+        "ParamFieldName": "dlcs",
+        "IncludeInCommandLine": false,
+        "DefaultValue": ""
+    }
+]
