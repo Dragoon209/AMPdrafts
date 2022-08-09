@@ -23,10 +23,9 @@
         "InputType": "password",
         "IsFlagArgument": false,
         "ParamFieldName": "password",
-        "IncludeInCommandLine": false,
+        "IncludeInCommandLine": true,
         "DefaultValue": "",
-        "EnumValues": {},
-        "SkipIfEmpty": true
+        "EnumValues": {}
     },
     {
         "DisplayName": "Seed",
@@ -39,8 +38,7 @@
         "ParamFieldName": "seed",
         "IncludeInCommandLine": true,
         "Placeholder": "1234567890",
-        "DefaultValue": "",
-        "SkipIfEmpty": true
+        "DefaultValue": ""
     },
     {
         "DisplayName": "Spawn Guide House",
@@ -83,7 +81,6 @@
         "ParamFieldName": "motd",
         "IncludeInCommandLine": false,
         "DefaultValue": "Welcome to Necesse",
-        "EnumValues": {},
-        "SkipIfEmpty": true
+        "EnumValues": {}
     }
 ]
