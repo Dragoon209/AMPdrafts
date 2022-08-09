@@ -1,0 +1,16 @@
+{
+  "announce": {{announce}},
+  "description": "{{description}}",
+  "host": "0.0.0.0",
+  "httpPort": {{httpPort}},
+  "logLevel": {{logLevel}},
+  "logo": "",
+  "maxPlayers": {{maxPlayers}},
+  "maxTickRate": {{maxTickRate}},
+  "name": "{{name}}",
+  "password": "{{password}}",
+  "port": {{port}},
+  "queryPort": {{queryPort}},
+  "requiredDLC": [{{requiredDLC}}],
+  "steamPort": {{steamPort}}
+}

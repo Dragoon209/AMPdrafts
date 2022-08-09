@@ -66,6 +66,22 @@
         "EnumValues": {}
     },
     {
+        "DisplayName": "Server Announce",
+        "Category": "Server Settings",
+        "Description": "Add a check here if you want to announce your server on the master server browser list.",
+        "Keywords": "Server Announce",
+        "FieldName": "announce",
+        "InputType": "checkbox",
+        "IsFlagArgument": false,
+        "ParamFieldName": "announce",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "false",
+        "EnumValues": {
+         "False": "false",
+         "True": "true"
+        }
+    },
+    {
         "DisplayName": "Required DLCs",
         "Category": "Server Settings",
         "Description": "Comma separated list of owned DLC IDs required to join.  Leave this blank to not require any DLCs to join.",
