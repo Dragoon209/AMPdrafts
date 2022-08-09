@@ -1,10 +1,8 @@
 [
     {
         "ConfigFile": "config.json",
-            //If AutoMap is enabled, it is required that the file alreaady exists for AMP to use as a template.
-            //AMP will then automatically map the field values based on the ParamFieldName. You can use 
-            //The JPath syntax (foo.bar.baz) to use if you need to access a nested structure.
         "AutoMap": true,
-        "ConfigType":"json"
+        "ConfigType": "template",
+        "ConfigFileTemplate": "jc3mpserverconfig.json"
     }
  ]
