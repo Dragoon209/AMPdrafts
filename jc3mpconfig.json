@@ -8,7 +8,7 @@
         "InputType": "number",
         "IsFlagArgument": false,
         "Required": true,
-        "ParamFieldName": "maxplayers",
+        "ParamFieldName": "maxPlayers",
         "IncludeInCommandLine": true,
         "DefaultValue": "20",
         "EnumValues": {},
