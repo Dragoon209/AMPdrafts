@@ -1,7 +1,7 @@
 [
     {
         "ConfigFile": "config.json",
-        "AutoMap": true,
+        "AutoMap": false,
         "ConfigType": "template",
         "ConfigFileTemplate": "jc3mpserverconfig.json"
     }
