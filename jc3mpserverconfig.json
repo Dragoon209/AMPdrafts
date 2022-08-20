@@ -2,15 +2,15 @@
   "announce": {{announce}},
   "description": "{{description}}",
   "host": "0.0.0.0",
-  "httpPort": {{httpPort}},
+  "httpPort": {{$httpPort}},
   "logLevel": 7,
   "logo": "",
   "maxPlayers": {{maxPlayers}},
   "maxTickRate": {{maxTickRate}},
   "name": "{{name}}",
   "password": "{{password}}",
-  "port": {{port}},
-  "queryPort": {{queryPort}},
+  "port": {{$port}},
+  "queryPort": {{$queryPort}},
   "requiredDLC": [{{requiredDLC}}],
-  "steamPort": {{steamPort}}
+  "steamPort": {{$steamPort}}
 }
