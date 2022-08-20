@@ -9,7 +9,7 @@
         "IsFlagArgument": false,
         "Required": true,
         "ParamFieldName": "maxPlayers",
-        "IncludeInCommandLine": true,
+        "IncludeInCommandLine": false,
         "DefaultValue": "20",
         "EnumValues": {},
         "Suffix":"players"
@@ -49,6 +49,7 @@
         "InputType": "number",
         "IsFlagArgument": false,
         "ParamFieldName": "maxTickRate",
+        "IncludeInCommandLine": false,
         "DefaultValue": "60",
         "Suffix":"ticks per second",
         "EnumValues": {}
@@ -62,6 +63,7 @@
         "InputType": "text",
         "IsFlagArgument": false,
         "ParamFieldName": "name",
+        "IncludeInCommandLine": false,
         "DefaultValue": "JC3MP-AMP",
         "EnumValues": {}
     },
@@ -90,6 +92,7 @@
         "InputType": "text",
         "IsFlagArgument": false,
         "ParamFieldName": "requiredDLC",
+        "IncludeInCommandLine": false,
         "DefaultValue": "",
         "EnumValues": {}
     }
