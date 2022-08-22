@@ -1,5 +1,57 @@
 [
     {
+        "DisplayName": "Game Port",
+        "Category": "Server Settings",
+        "Description": "Game Server Port",
+        "FieldName": "port",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "ParamFieldName": "gport",
+        "IncludeInCommandLine": false,
+        "Hidden": true,
+        "DefaultValue": "",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "HTTP Port",
+        "Category": "Server Settings",
+        "Description": "HTTP Port",
+        "FieldName": "httpPort",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "ParamFieldName": "hport",
+        "IncludeInCommandLine": false,
+        "Hidden": true,
+        "DefaultValue": "",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Query Port",
+        "Category": "Server Settings",
+        "Description": "Query Port",
+        "FieldName": "queryPort",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "ParamFieldName": "qport",
+        "IncludeInCommandLine": false,
+        "Hidden": true,
+        "DefaultValue": "",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Steam Port",
+        "Category": "Server Settings",
+        "Description": "Steam Port",
+        "FieldName": "steamPort",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "ParamFieldName": "sport",
+        "IncludeInCommandLine": false,
+        "Hidden": true,
+        "DefaultValue": "",
+        "EnumValues": {}
+    },
+    {
         "DisplayName": "Players",
         "Category": "Server Settings",
         "Description": "Number of players allowed to join.",
