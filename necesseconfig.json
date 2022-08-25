@@ -22,7 +22,7 @@
         "IsFlagArgument": false,
         "Required": true,
         "ParamFieldName": "slots",
-        "IncludeInCommandLine": true,
+        "IncludeInCommandLine": false,
         "DefaultValue": "20",
         "EnumValues": {},
         "Suffix":"players"
@@ -36,7 +36,7 @@
         "InputType": "password",
         "IsFlagArgument": false,
         "ParamFieldName": "password",
-        "IncludeInCommandLine": true,
+        "IncludeInCommandLine": false,
         "DefaultValue": "",
         "EnumValues": {}
     },
@@ -124,7 +124,7 @@
         "InputType": "text",
         "IsFlagArgument": false,
         "ParamFieldName": "motd",
-        "IncludeInCommandLine": true,
+        "IncludeInCommandLine": false,
         "DefaultValue": "Welcome to Necesse",
         "EnumValues": {}
     }
