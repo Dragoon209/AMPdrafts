@@ -138,7 +138,7 @@
     {
         "DisplayName": "Required DLCs",
         "Category": "Server Settings",
-        "Description": "Comma separated list of owned DLC IDs required to join.  Leave this blank to not require any DLCs to join.",
+        "Description": "Comma separated list of owned DLC IDs required to join.  [A list is available here](https://just-cause.mp/docs/general/information/Server%20Configuration) Leave this blank to not require any DLCs to join.",
         "Keywords": "dlcs",
         "FieldName": "requiredDLC",
         "InputType": "text",
