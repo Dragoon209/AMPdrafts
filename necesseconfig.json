@@ -1,5 +1,18 @@
 [
     {
+        "DisplayName": "Game Port",
+        "Category": "Server Settings",
+        "Description": "",
+        "FieldName": "$GamePort",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "ParamFieldName": "gport",
+        "IncludeInCommandLine": false,
+        "Hidden": true,
+        "DefaultValue": "14159",
+        "EnumValues": {}
+    },
+    {
         "DisplayName": "Players",
         "Category": "Server Settings",
         "Description": "Number of players allowed to join. Number between 1-250.",
@@ -54,6 +67,38 @@
         "EnumValues": {
          "False": "n",
          "True": "y"
+        }
+    },
+    {
+        "DisplayName": "Give Clients Power",
+        "Category": "Server Settings",
+        "Description": "If true, clients will have much more power over what hits them, their position etc.",
+        "Keywords": "client power",
+        "FieldName": "clientPower",
+        "InputType": "checkbox",
+        "IsFlagArgument": false,
+        "ParamFieldName": "giveClientPower",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "true",
+        "EnumValues": {
+         "false": "false",
+         "true": "true"
+        }
+    },
+    {
+        "DisplayName": "Pause When Empty",
+        "Category": "Server Settings",
+        "Description": "If enabled, the server will pause when there are no connected players.",
+        "Keywords": "server pause",
+        "FieldName": "serverPause",
+        "InputType": "checkbox",
+        "IsFlagArgument": false,
+        "ParamFieldName": "svrPause",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "false",
+        "EnumValues": {
+         "false": "false",
+         "true": "true"
         }
     },
     {

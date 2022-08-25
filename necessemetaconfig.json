@@ -1,0 +1,8 @@
+[
+    {
+        "ConfigFile": "cfg/config.json",
+        "AutoMap": true,
+        "ConfigType": "template",
+        "ConfigFileTemplate": "necesseserverconfig.cfg"
+    }
+ ]
