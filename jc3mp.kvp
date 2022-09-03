@@ -71,9 +71,9 @@ Console.FilterMatchRegex=
 Console.FilterMatchReplacement=
 Console.ThrowawayMessageRegex=
 Console.AppReadyRegex=^\[[\d\-]+ [\d:]+\]: Server successfully started up, awaiting connects\.\.\.$
-Console.UserJoinRegex=^\[[\d\-]+ [\d:]+\] Client "(?<username>.+?)" connected on slot (.+)\.$
-Console.UserLeaveRegex=^\[[\d\-]+ [\d:]+\] Player (?<userid>\d+?) \("(?<username>.+)"\) disconnected with message: .+$
-Console.UserChatRegex=^\[[\d\-]+ [\d:]+\] \((?<username>.+)\): (?<message>.+)$
+Console.UserJoinRegex=^(?<username>.+?) has joined\.$
+Console.UserLeaveRegex=^(?<username>.+?) has left\.$
+Console.UserChatRegex=^=^(?<username>.+?): (?<message>.+)$
 Console.UpdateAvailableRegex=^\[\d\d:\d\d:\d\d\] \[INFO\] A new server update is available! v[\d\.]+.$
 Console.MetricsRegex=
 Console.SuppressLogAtStart=False

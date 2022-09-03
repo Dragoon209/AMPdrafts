@@ -122,7 +122,7 @@
     {
         "DisplayName": "Server Announce",
         "Category": "Server Settings",
-        "Description": "Add a check here if you want to announce your server on the master server browser list.",
+        "Description": "Add a check here if you want to announce your server on the master server browser list. This requires additional setup and an authentication key to work.  [Instructions are available here](https://just-cause.mp/docs/general/information/Adding%20your%20Server%20to%20the%20Server%20Browser)",
         "Keywords": "Server Announce",
         "FieldName": "announce",
         "InputType": "checkbox",
