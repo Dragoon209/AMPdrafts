@@ -22,7 +22,7 @@ App.ExecutableLinux=1026340/DedicatedServer
 App.WorkingDir=1026340
 App.LinuxCommandLineArgs=
 App.WindowsCommandLineArgs=
-App.CommandLineArgs={{$FormattedArgs}}
+App.CommandLineArgs=
 App.AppSettings={}
 App.EnvironmentVariables={"LD_LIBRARY_PATH":"{{$FullRootDir}}linux64:%LD_LIBRARY_PATH%","SteamAppId":"1026340"}
 App.CommandLineParameterFormat=-{0}={1}
