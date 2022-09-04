@@ -6,9 +6,9 @@
       "UpdateSourceData":"1026340"
    },
    {
-        "UpdateStageName":"Directory Creation",
-        "UpdateSourcePlatform":"All",
-        "UpdateSource":"CreateDirectory",
-        "UpdateSourceArgs”:”~/.local/share/Daedalic Entertainment GmbH/Barotrauma/"
-    }
+      "UpdateStageName":"Directory Creation",
+      "UpdateSourcePlatform":"All",
+      "UpdateSource":"CreateDirectory",
+      "UpdateSourceArgs":"/home/amp/.local/share/Daedalic Entertainment GmbH/Barotrauma"
+   }
 ]
