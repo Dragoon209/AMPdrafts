@@ -1,0 +1,8 @@
+[
+    {
+        "ConfigFile": "serverconfig.xml",
+        "AutoMap": true,
+        "ConfigType": "template",
+        "ConfigFileTemplate": "barotraumaserverconfig.xml"
+    }
+ ]

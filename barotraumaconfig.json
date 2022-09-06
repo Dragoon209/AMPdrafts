@@ -10,7 +10,7 @@
         "IsFlagArgument":false,
         "ParamFieldName":"gport",
         "IncludeInCommandLine":false,
-        "EnumValues":{}
+        "EnumValues":    {}
     },
     {
         "DisplayName":"Query Port",
@@ -23,7 +23,7 @@
         "IsFlagArgument":false,
         "ParamFieldName":"qport",
         "IncludeInCommandLine":false,
-        "EnumValues":{}
+        "EnumValues":    {}
     },
     {
         "DisplayName": "Players",
@@ -37,97 +37,1072 @@
         "ParamFieldName": "slots",
         "IncludeInCommandLine": false,
         "DefaultValue": "16",
-        "EnumValues": {},
+        "EnumValues":     {},
         "Suffix":"players"
     },
-]
-
-name="Server"
-public="false"
-port="27015"
-queryport="27016"
-password=""
-enableupnp="false"
-autorestart="false"
-LevelDifficulty="20"
+    {
+        "DisplayName": "Server Name",
+        "Category": "Server Settings",
+        "Description": "Name as it appears in the server browser.",
+        "Keywords": "server name",
+        "FieldName": "ServerName",
+        "InputType": "text",
+        "IsFlagArgument": false,
+        "Required": true,
+        "ParamFieldName": "ServerName",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "Server",
+        "EnumValues":     {}
+    },
+    {
+        "DisplayName": "Public Server",
+        "Category": "Server Settings",
+        "Description": "If true, your server will show up on the server browser.",
+        "Keywords": "publis server",
+        "FieldName": "PublicServer",
+        "InputType": "checkbox",
+        "IsFlagArgument": false,
+        "Required": true,
+        "ParamFieldName": "PublicServer",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "false",
+        "EnumValues":     {
+         "false": "false",
+         "true": "true"
+        }
+    },
+    {
+        "DisplayName": "Password",
+        "Category": "Server Settings",
+        "Description": "Password to join the server.",
+        "Keywords": "password",
+        "FieldName": "Password",
+        "InputType": "password",
+        "IsFlagArgument": false,
+        "ParamFieldName": "Password",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "enableupnp",
+        "Category": "Server Settings",
+        "Description": "Description",
+        "Keywords": "keyword",
+        "FieldName": "enableupnp",
+        "InputType": "checkbox",
+        "IsFlagArgument": false,
+        "Required": true,
+        "ParamFieldName": "slots",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "false",
+        "EnumValues":     {},
+        "Suffix":"players"
+    },
+    {
+        "DisplayName": "autorestart",
+        "Category": "Server Settings",
+        "Description": "Description",
+        "Keywords": "keyword",
+        "FieldName": "autorestart",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "Required": true,
+        "ParamFieldName": "slots",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "false",
+        "EnumValues":     {},
+        "Suffix":"players"
+    },
+    {
+        "DisplayName": "LevelDifficulty",
+        "Category": "Server Settings",
+        "Description": "Description",
+        "Keywords": "keyword",
+        "FieldName": "LevelDifficulty",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "Required": true,
+        "ParamFieldName": "slots",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "20",
+        "EnumValues":     {},
+        "Suffix":"players"
+    },
 ServerMessage=""
 HiddenSubs=""
-AllowedRandomMissionTypes="Salvage,Monster,Cargo,Combat"
-AllowedClientNameChars="32-33,38-46,48-57,65-90,91-91,93-93,95-122,192-255,384-591,1024-1279,19968-21327,21329-40959,13312-19903,131072-173791,173824-178207,178208-183983,63744-64255,194560-195103"
-TickRate="20"
-RandomizeSeed="True"
-UseRespawnShuttle="True"
-RespawnInterval="300"
-MaxTransportTime="180"
-MinRespawnRatio="0.2"
-AutoRestartInterval="60"
-StartWhenClientsReady="False"
-StartWhenClientsReadyRatio="0.8"
-AllowSpectating="True"
-SaveServerLogs="True"
-AllowModDownloads="True"
-AllowRagdollButton="True"
-AllowFileTransfers="True"
-VoiceChatEnabled="True"
-PlayStyle="Casual"
-LosMode="Transparent"
-LinesPerLogFile="800"
-AllowVoteKick="True"
-AllowEndVoting="True"
-AllowRespawn="True"
-BotCount="0"
-MaxBotCount="16"
-BotSpawnMode="Normal"
-DisableBotConversations="False"
-AllowDisguises="True"
-AllowRewiring="True"
-LockAllDefaultWires="False"
-AllowLinkingWifiToChat="False"
-AllowFriendlyFire="True"
-DestructibleOutposts="False"
-KillableNPCs="True"
-BanAfterWrongPassword="True"
-MaxPasswordRetriesBeforeBan="3"
-SelectedSubmarine="Azimuth"
-SelectedShuttle="Hemulen"
-TraitorsEnabled="No"
-TraitorsMinPlayerCount="1"
-TraitorsMinStartDelay="90"
-TraitorsMaxStartDelay="180"
-TraitorsMinRestartDelay="30"
-TraitorsMaxRestartDelay="90"
-SubSelectionMode="Manual"
-ModeSelectionMode="Manual"
-EndVoteRequiredRatio="0.6"
-VoteRequiredRatio="0.6"
-VoteTimeout="30"
-KickVoteRequiredRatio="0.6"
-KillDisconnectedTime="300"
-KickAFKTime="600"
-KarmaEnabled="True"
-KarmaPreset="default"
-GameModeIdentifier="sandbox"
-MissionType="All"
-MaxPlayers="10"
-AutoBanTime="3600"
-MaxAutoBanTime="86400"
-LootedMoneyDestination="Bank"
+    {
+        "DisplayName": "AllowedRandomMissionTypes",
+        "Category": "Server Settings",
+        "Description": "Description",
+        "Keywords": "keyword",
+        "FieldName": "AllowedRandomMissionTypes",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "Required": true,
+        "ParamFieldName": "slots",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "Salvage,Monster,Cargo,Combat",
+        "EnumValues":     {},
+        "Suffix":"players"
+    },
+    {
+        "DisplayName": "AllowedClientNameChars",
+        "Category": "Server Settings",
+        "Description": "Description",
+        "Keywords": "keyword",
+        "FieldName": "AllowedClientNameChars",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "Required": true,
+        "ParamFieldName": "slots",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "32-33,38-46,48-57,65-90,91-91,93-93,95-122,192-255,384-591,1024-1279,19968-21327,21329-40959,13312-19903,131072-173791,173824-178207,178208-183983,63744-64255,194560-195103",
+        "EnumValues":     {},
+        "Suffix":"players"
+    },
+    {
+        "DisplayName": "TickRate",
+        "Category": "Server Settings",
+        "Description": "Description",
+        "Keywords": "keyword",
+        "FieldName": "TickRate",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "Required": true,
+        "ParamFieldName": "slots",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "20",
+        "EnumValues":     {},
+        "Suffix":"players"
+    },
+    {
+        "DisplayName": "RandomizeSeed",
+        "Category": "Server Settings",
+        "Description": "Description",
+        "Keywords": "keyword",
+        "FieldName": "RandomizeSeed",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "Required": true,
+        "ParamFieldName": "slots",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "True",
+        "EnumValues":     {},
+        "Suffix":"players"
+    },
+    {
+        "DisplayName": "UseRespawnShuttle",
+        "Category": "Server Settings",
+        "Description": "Description",
+        "Keywords": "keyword",
+        "FieldName": "UseRespawnShuttle",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "Required": true,
+        "ParamFieldName": "slots",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "True",
+        "EnumValues":     {},
+        "Suffix":"players"
+    },
+    {
+        "DisplayName": "RespawnInterval",
+        "Category": "Server Settings",
+        "Description": "Description",
+        "Keywords": "keyword",
+        "FieldName": "RespawnInterval",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "Required": true,
+        "ParamFieldName": "slots",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "300",
+        "EnumValues":     {},
+        "Suffix":"players"
+    },
+    {
+        "DisplayName": "MaxTransportTime",
+        "Category": "Server Settings",
+        "Description": "Description",
+        "Keywords": "keyword",
+        "FieldName": "MaxTransportTime",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "Required": true,
+        "ParamFieldName": "slots",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "180",
+        "EnumValues":     {},
+        "Suffix":"players"
+    },
+    {
+        "DisplayName": "MinRespawnRatio",
+        "Category": "Server Settings",
+        "Description": "Description",
+        "Keywords": "keyword",
+        "FieldName": "MinRespawnRatio",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "Required": true,
+        "ParamFieldName": "slots",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "0.2",
+        "EnumValues":     {},
+        "Suffix":"players"
+    },
+    {
+        "DisplayName": "AutoRestartInterval",
+        "Category": "Server Settings",
+        "Description": "Description",
+        "Keywords": "keyword",
+        "FieldName": "AutoRestartInterval",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "Required": true,
+        "ParamFieldName": "slots",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "60",
+        "EnumValues":     {},
+        "Suffix":"players"
+    },
+    {
+        "DisplayName": "StartWhenClientsReady",
+        "Category": "Server Settings",
+        "Description": "Description",
+        "Keywords": "keyword",
+        "FieldName": "StartWhenClientsReady",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "Required": true,
+        "ParamFieldName": "slots",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "False",
+        "EnumValues":     {},
+        "Suffix":"players"
+    },
+    {
+        "DisplayName": "StartWhenClientsReadyRatio",
+        "Category": "Server Settings",
+        "Description": "Description",
+        "Keywords": "keyword",
+        "FieldName": "StartWhenClientsReadyRatio",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "Required": true,
+        "ParamFieldName": "slots",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "0.8",
+        "EnumValues":     {},
+        "Suffix":"players"
+    },
+    {
+        "DisplayName": "AllowSpectating",
+        "Category": "Server Settings",
+        "Description": "Description",
+        "Keywords": "keyword",
+        "FieldName": "AllowSpectating",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "Required": true,
+        "ParamFieldName": "slots",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "True",
+        "EnumValues":     {},
+        "Suffix":"players"
+    },
+    {
+        "DisplayName": "SaveServerLogs",
+        "Category": "Server Settings",
+        "Description": "Description",
+        "Keywords": "keyword",
+        "FieldName": "SaveServerLogs",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "Required": true,
+        "ParamFieldName": "slots",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "True",
+        "EnumValues":     {},
+        "Suffix":"players"
+    },
+    {
+        "DisplayName": "AllowModDownloads",
+        "Category": "Server Settings",
+        "Description": "Description",
+        "Keywords": "keyword",
+        "FieldName": "AllowModDownloads",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "Required": true,
+        "ParamFieldName": "slots",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "True",
+        "EnumValues":     {},
+        "Suffix":"players"
+    },
+    {
+        "DisplayName": "AllowRagdollButton",
+        "Category": "Server Settings",
+        "Description": "Description",
+        "Keywords": "keyword",
+        "FieldName": "AllowRagdollButton",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "Required": true,
+        "ParamFieldName": "slots",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "True",
+        "EnumValues":     {},
+        "Suffix":"players"
+    },
+    {
+        "DisplayName": "AllowFileTransfers",
+        "Category": "Server Settings",
+        "Description": "Description",
+        "Keywords": "keyword",
+        "FieldName": "AllowFileTransfers",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "Required": true,
+        "ParamFieldName": "slots",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "True",
+        "EnumValues":     {},
+        "Suffix":"players"
+    },
+    {
+        "DisplayName": "VoiceChatEnabled",
+        "Category": "Server Settings",
+        "Description": "Description",
+        "Keywords": "keyword",
+        "FieldName": "VoiceChatEnabled",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "Required": true,
+        "ParamFieldName": "slots",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "True",
+        "EnumValues":     {},
+        "Suffix":"players"
+    },
+    {
+        "DisplayName": "PlayStyle",
+        "Category": "Server Settings",
+        "Description": "Description",
+        "Keywords": "keyword",
+        "FieldName": "PlayStyle",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "Required": true,
+        "ParamFieldName": "slots",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "Casual",
+        "EnumValues":     {},
+        "Suffix":"players"
+    },
+    {
+        "DisplayName": "LosMode",
+        "Category": "Server Settings",
+        "Description": "Description",
+        "Keywords": "keyword",
+        "FieldName": "LosMode",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "Required": true,
+        "ParamFieldName": "slots",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "Transparent",
+        "EnumValues":     {},
+        "Suffix":"players"
+    },
+    {
+        "DisplayName": "LinesPerLogFile",
+        "Category": "Server Settings",
+        "Description": "Description",
+        "Keywords": "keyword",
+        "FieldName": "LinesPerLogFile",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "Required": true,
+        "ParamFieldName": "slots",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "800",
+        "EnumValues":     {},
+        "Suffix":"players"
+    },
+    {
+        "DisplayName": "AllowVoteKick",
+        "Category": "Server Settings",
+        "Description": "Description",
+        "Keywords": "keyword",
+        "FieldName": "AllowVoteKick",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "Required": true,
+        "ParamFieldName": "slots",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "True",
+        "EnumValues":     {},
+        "Suffix":"players"
+    },
+    {
+        "DisplayName": "AllowEndVoting",
+        "Category": "Server Settings",
+        "Description": "Description",
+        "Keywords": "keyword",
+        "FieldName": "AllowEndVoting",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "Required": true,
+        "ParamFieldName": "slots",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "True",
+        "EnumValues":     {},
+        "Suffix":"players"
+    },
+    {
+        "DisplayName": "AllowRespawn",
+        "Category": "Server Settings",
+        "Description": "Description",
+        "Keywords": "keyword",
+        "FieldName": "AllowRespawn",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "Required": true,
+        "ParamFieldName": "slots",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "True",
+        "EnumValues":     {},
+        "Suffix":"players"
+    },
+    {
+        "DisplayName": "BotCount",
+        "Category": "Server Settings",
+        "Description": "Description",
+        "Keywords": "keyword",
+        "FieldName": "BotCount",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "Required": true,
+        "ParamFieldName": "slots",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "0",
+        "EnumValues":     {},
+        "Suffix":"players"
+    },
+    {
+        "DisplayName": "MaxBotCount",
+        "Category": "Server Settings",
+        "Description": "Description",
+        "Keywords": "keyword",
+        "FieldName": "MaxBotCount",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "Required": true,
+        "ParamFieldName": "slots",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "16",
+        "EnumValues":     {},
+        "Suffix":"players"
+    },
+    {
+        "DisplayName": "BotSpawnMode",
+        "Category": "Server Settings",
+        "Description": "Description",
+        "Keywords": "keyword",
+        "FieldName": "BotSpawnMode",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "Required": true,
+        "ParamFieldName": "slots",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "Normal",
+        "EnumValues":     {},
+        "Suffix":"players"
+    },
+    {
+        "DisplayName": "DisableBotConversations",
+        "Category": "Server Settings",
+        "Description": "Description",
+        "Keywords": "keyword",
+        "FieldName": "DisableBotConversations",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "Required": true,
+        "ParamFieldName": "slots",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "False",
+        "EnumValues":     {},
+        "Suffix":"players"
+    },
+    {
+        "DisplayName": "AllowDisguises",
+        "Category": "Server Settings",
+        "Description": "Description",
+        "Keywords": "keyword",
+        "FieldName": "AllowDisguises",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "Required": true,
+        "ParamFieldName": "slots",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "True",
+        "EnumValues":     {},
+        "Suffix":"players"
+    },
+    {
+        "DisplayName": "AllowRewiring",
+        "Category": "Server Settings",
+        "Description": "Description",
+        "Keywords": "keyword",
+        "FieldName": "AllowRewiring",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "Required": true,
+        "ParamFieldName": "slots",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "True",
+        "EnumValues":     {},
+        "Suffix":"players"
+    },
+    {
+        "DisplayName": "LockAllDefaultWires",
+        "Category": "Server Settings",
+        "Description": "Description",
+        "Keywords": "keyword",
+        "FieldName": "LockAllDefaultWires",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "Required": true,
+        "ParamFieldName": "slots",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "False",
+        "EnumValues":     {},
+        "Suffix":"players"
+    },
+    {
+        "DisplayName": "AllowLinkingWifiToChat",
+        "Category": "Server Settings",
+        "Description": "Description",
+        "Keywords": "keyword",
+        "FieldName": "AllowLinkingWifiToChat",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "Required": true,
+        "ParamFieldName": "slots",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "False",
+        "EnumValues":     {},
+        "Suffix":"players"
+    },
+    {
+        "DisplayName": "AllowFriendlyFire",
+        "Category": "Server Settings",
+        "Description": "Description",
+        "Keywords": "keyword",
+        "FieldName": "AllowFriendlyFire",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "Required": true,
+        "ParamFieldName": "slots",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "True",
+        "EnumValues":     {},
+        "Suffix":"players"
+    },
+    {
+        "DisplayName": "DestructibleOutposts",
+        "Category": "Server Settings",
+        "Description": "Description",
+        "Keywords": "keyword",
+        "FieldName": "DestructibleOutposts",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "Required": true,
+        "ParamFieldName": "slots",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "False",
+        "EnumValues":     {},
+        "Suffix":"players"
+    },
+    {
+        "DisplayName": "KillableNPCs",
+        "Category": "Server Settings",
+        "Description": "Description",
+        "Keywords": "keyword",
+        "FieldName": "KillableNPCs",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "Required": true,
+        "ParamFieldName": "slots",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "True",
+        "EnumValues":     {},
+        "Suffix":"players"
+    },
+    {
+        "DisplayName": "BanAfterWrongPassword",
+        "Category": "Server Settings",
+        "Description": "Description",
+        "Keywords": "keyword",
+        "FieldName": "BanAfterWrongPassword",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "Required": true,
+        "ParamFieldName": "slots",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "True",
+        "EnumValues":     {},
+        "Suffix":"players"
+    },
+    {
+        "DisplayName": "MaxPasswordRetriesBeforeBan",
+        "Category": "Server Settings",
+        "Description": "Description",
+        "Keywords": "keyword",
+        "FieldName": "MaxPasswordRetriesBeforeBan",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "Required": true,
+        "ParamFieldName": "slots",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "3",
+        "EnumValues":     {},
+        "Suffix":"players"
+    },
+    {
+        "DisplayName": "SelectedSubmarine",
+        "Category": "Server Settings",
+        "Description": "Description",
+        "Keywords": "keyword",
+        "FieldName": "SelectedSubmarine",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "Required": true,
+        "ParamFieldName": "slots",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "Azimuth",
+        "EnumValues":     {},
+        "Suffix":"players"
+    },
+    {
+        "DisplayName": "SelectedShuttle",
+        "Category": "Server Settings",
+        "Description": "Description",
+        "Keywords": "keyword",
+        "FieldName": "SelectedShuttle",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "Required": true,
+        "ParamFieldName": "slots",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "Hemulen",
+        "EnumValues":     {},
+        "Suffix":"players"
+    },
+    {
+        "DisplayName": "TraitorsEnabled",
+        "Category": "Server Settings",
+        "Description": "Description",
+        "Keywords": "keyword",
+        "FieldName": "TraitorsEnabled",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "Required": true,
+        "ParamFieldName": "slots",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "No",
+        "EnumValues":     {},
+        "Suffix":"players"
+    },
+    {
+        "DisplayName": "TraitorsMinPlayerCount",
+        "Category": "Server Settings",
+        "Description": "Description",
+        "Keywords": "keyword",
+        "FieldName": "TraitorsMinPlayerCount",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "Required": true,
+        "ParamFieldName": "slots",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "1",
+        "EnumValues":     {},
+        "Suffix":"players"
+    },
+    {
+        "DisplayName": "TraitorsMinStartDelay",
+        "Category": "Server Settings",
+        "Description": "Description",
+        "Keywords": "keyword",
+        "FieldName": "TraitorsMinStartDelay",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "Required": true,
+        "ParamFieldName": "slots",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "90",
+        "EnumValues":     {},
+        "Suffix":"players"
+    },
+    {
+        "DisplayName": "TraitorsMaxStartDelay",
+        "Category": "Server Settings",
+        "Description": "Description",
+        "Keywords": "keyword",
+        "FieldName": "TraitorsMaxStartDelay",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "Required": true,
+        "ParamFieldName": "slots",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "180",
+        "EnumValues":     {},
+        "Suffix":"players"
+    },
+    {
+        "DisplayName": "TraitorsMinRestartDelay",
+        "Category": "Server Settings",
+        "Description": "Description",
+        "Keywords": "keyword",
+        "FieldName": "TraitorsMinRestartDelay",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "Required": true,
+        "ParamFieldName": "slots",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "30",
+        "EnumValues":     {},
+        "Suffix":"players"
+    },
+    {
+        "DisplayName": "TraitorsMaxRestartDelay",
+        "Category": "Server Settings",
+        "Description": "Description",
+        "Keywords": "keyword",
+        "FieldName": "TraitorsMaxRestartDelay",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "Required": true,
+        "ParamFieldName": "slots",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "90",
+        "EnumValues":     {},
+        "Suffix":"players"
+    },
+    {
+        "DisplayName": "SubSelectionMode",
+        "Category": "Server Settings",
+        "Description": "Description",
+        "Keywords": "keyword",
+        "FieldName": "SubSelectionMode",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "Required": true,
+        "ParamFieldName": "slots",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "Manual",
+        "EnumValues":     {},
+        "Suffix":"players"
+    },
+    {
+        "DisplayName": "ModeSelectionMode",
+        "Category": "Server Settings",
+        "Description": "Description",
+        "Keywords": "keyword",
+        "FieldName": "ModeSelectionMode",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "Required": true,
+        "ParamFieldName": "slots",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "Manual",
+        "EnumValues":     {},
+        "Suffix":"players"
+    },
+    {
+        "DisplayName": "EndVoteRequiredRatio",
+        "Category": "Server Settings",
+        "Description": "Description",
+        "Keywords": "keyword",
+        "FieldName": "EndVoteRequiredRatio",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "Required": true,
+        "ParamFieldName": "slots",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "0.6",
+        "EnumValues":     {},
+        "Suffix":"players"
+    },
+    {
+        "DisplayName": "VoteRequiredRatio",
+        "Category": "Server Settings",
+        "Description": "Description",
+        "Keywords": "keyword",
+        "FieldName": "VoteRequiredRatio",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "Required": true,
+        "ParamFieldName": "slots",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "0.6",
+        "EnumValues":     {},
+        "Suffix":"players"
+    },
+    {
+        "DisplayName": "VoteTimeout",
+        "Category": "Server Settings",
+        "Description": "Description",
+        "Keywords": "keyword",
+        "FieldName": "VoteTimeout",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "Required": true,
+        "ParamFieldName": "slots",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "30",
+        "EnumValues":     {},
+        "Suffix":"players"
+    },
+    {
+        "DisplayName": "KickVoteRequiredRatio",
+        "Category": "Server Settings",
+        "Description": "Description",
+        "Keywords": "keyword",
+        "FieldName": "KickVoteRequiredRatio",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "Required": true,
+        "ParamFieldName": "slots",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "0.6",
+        "EnumValues":     {},
+        "Suffix":"players"
+    },
+    {
+        "DisplayName": "KillDisconnectedTime",
+        "Category": "Server Settings",
+        "Description": "Description",
+        "Keywords": "keyword",
+        "FieldName": "KillDisconnectedTime",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "Required": true,
+        "ParamFieldName": "slots",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "300",
+        "EnumValues":     {},
+        "Suffix":"players"
+    },
+    {
+        "DisplayName": "KickAFKTime",
+        "Category": "Server Settings",
+        "Description": "Description",
+        "Keywords": "keyword",
+        "FieldName": "KickAFKTime",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "Required": true,
+        "ParamFieldName": "slots",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "600",
+        "EnumValues":     {},
+        "Suffix":"players"
+    },
+    {
+        "DisplayName": "KarmaEnabled",
+        "Category": "Server Settings",
+        "Description": "Description",
+        "Keywords": "keyword",
+        "FieldName": "KarmaEnabled",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "Required": true,
+        "ParamFieldName": "slots",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "True",
+        "EnumValues":     {},
+        "Suffix":"players"
+    },
+    {
+        "DisplayName": "KarmaPreset",
+        "Category": "Server Settings",
+        "Description": "Description",
+        "Keywords": "keyword",
+        "FieldName": "KarmaPreset",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "Required": true,
+        "ParamFieldName": "slots",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "default",
+        "EnumValues":     {},
+        "Suffix":"players"
+    },
+    {
+        "DisplayName": "GameModeIdentifier",
+        "Category": "Server Settings",
+        "Description": "Description",
+        "Keywords": "keyword",
+        "FieldName": "GameModeIdentifier",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "Required": true,
+        "ParamFieldName": "slots",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "sandbox",
+        "EnumValues":     {},
+        "Suffix":"players"
+    },
+    {
+        "DisplayName": "MissionType",
+        "Category": "Server Settings",
+        "Description": "Description",
+        "Keywords": "keyword",
+        "FieldName": "MissionType",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "Required": true,
+        "ParamFieldName": "slots",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "All",
+        "EnumValues":     {},
+        "Suffix":"players"
+    },
+    {
+        "DisplayName": "MaxPlayers",
+        "Category": "Server Settings",
+        "Description": "Description",
+        "Keywords": "keyword",
+        "FieldName": "MaxPlayers",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "Required": true,
+        "ParamFieldName": "slots",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "10",
+        "EnumValues":     {},
+        "Suffix":"players"
+    },
+    {
+        "DisplayName": "AutoBanTime",
+        "Category": "Server Settings",
+        "Description": "Description",
+        "Keywords": "keyword",
+        "FieldName": "AutoBanTime",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "Required": true,
+        "ParamFieldName": "slots",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "3600",
+        "EnumValues":     {},
+        "Suffix":"players"
+    },
+    {
+        "DisplayName": "MaxAutoBanTime",
+        "Category": "Server Settings",
+        "Description": "Description",
+        "Keywords": "keyword",
+        "FieldName": "MaxAutoBanTime",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "Required": true,
+        "ParamFieldName": "slots",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "86400",
+        "EnumValues":     {},
+        "Suffix":"players"
+    },
+    {
+        "DisplayName": "LootedMoneyDestination",
+        "Category": "Server Settings",
+        "Description": "Description",
+        "Keywords": "keyword",
+        "FieldName": "LootedMoneyDestination",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "Required": true,
+        "ParamFieldName": "slots",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "Bank",
+        "EnumValues":     {},
+        "Suffix":"players"
+    },
 MaximumMoneyTransferRequest="999999">
 
   <campaignsettings
 
 PresetName=""
-RadiationEnabled="False"
-MaxMissionCount="2"
-StartingBalanceAmount="Medium"
-Difficulty="Medium"
+    {
+        "DisplayName": "RadiationEnabled",
+        "Category": "Server Settings",
+        "Description": "Description",
+        "Keywords": "keyword",
+        "FieldName": "RadiationEnabled",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "Required": true,
+        "ParamFieldName": "slots",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "False",
+        "EnumValues":     {},
+        "Suffix":"players"
+    },
+    {
+        "DisplayName": "MaxMissionCount",
+        "Category": "Server Settings",
+        "Description": "Description",
+        "Keywords": "keyword",
+        "FieldName": "MaxMissionCount",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "Required": true,
+        "ParamFieldName": "slots",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "2",
+        "EnumValues":     {},
+        "Suffix":"players"
+    },
+    {
+        "DisplayName": "StartingBalanceAmount",
+        "Category": "Server Settings",
+        "Description": "Description",
+        "Keywords": "keyword",
+        "FieldName": "StartingBalanceAmount",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "Required": true,
+        "ParamFieldName": "slots",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "Medium",
+        "EnumValues":     {},
+        "Suffix":"players"
+    },
+    {
+        "DisplayName": "Difficulty",
+        "Category": "Server Settings",
+        "Description": "Description",
+        "Keywords": "keyword",
+        "FieldName": "Difficulty",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "Required": true,
+        "ParamFieldName": "slots",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "Medium",
+        "EnumValues":     {},
+        "Suffix":"players"
+    },
 StartItemSet="normal" />
 
 find
 ^(?<property>\w+)="(?<value>.+)"$
 
 replace
-{
+    {
         "DisplayName": "Players",
         "Category": "Server Settings",
         "Description": "Number of players allowed to join. Number between 1-250.",
@@ -139,6 +1114,6 @@ replace
         "ParamFieldName": "slots",
         "IncludeInCommandLine": false,
         "DefaultValue": "16",
-        "EnumValues": {},
+        "EnumValues":     {},
         "Suffix":"players"
     },
