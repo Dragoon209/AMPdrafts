@@ -37,7 +37,7 @@
         "ParamFieldName": "slots",
         "IncludeInCommandLine": false,
         "DefaultValue": "16",
-        "EnumValues":     {},
+        "EnumValues": {},
         "Suffix":"players"
     },
     {
@@ -52,7 +52,7 @@
         "ParamFieldName": "ServerName",
         "IncludeInCommandLine": false,
         "DefaultValue": "Server",
-        "EnumValues":     {}
+        "EnumValues": {}
     },
     {
         "DisplayName": "Public Server",
@@ -72,7 +72,7 @@
         }
     },
     {
-        "DisplayName": "Password",
+        "DisplayName": "Server Password",
         "Category": "Server Settings",
         "Description": "Password to join the server.",
         "Keywords": "password",
@@ -93,26 +93,13 @@
         "InputType": "checkbox",
         "IsFlagArgument": false,
         "Required": true,
-        "ParamFieldName": "slots",
+        "ParamFieldName": "EnableUPNP",
         "IncludeInCommandLine": false,
         "DefaultValue": "false",
-        "EnumValues":     {},
-        "Suffix":"players"
-    },
-    {
-        "DisplayName": "autorestart",
-        "Category": "Server Settings",
-        "Description": "Description",
-        "Keywords": "keyword",
-        "FieldName": "autorestart",
-        "InputType": "number",
-        "IsFlagArgument": false,
-        "Required": true,
-        "ParamFieldName": "slots",
-        "IncludeInCommandLine": false,
-        "DefaultValue": "false",
-        "EnumValues":     {},
-        "Suffix":"players"
+        "EnumValues": {
+         "false": "false",
+         "true": "true"
+        }
     },
     {
         "DisplayName": "LevelDifficulty",
@@ -126,43 +113,67 @@
         "ParamFieldName": "slots",
         "IncludeInCommandLine": false,
         "DefaultValue": "20",
-        "EnumValues":     {},
+        "EnumValues": {},
         "Suffix":"players"
     },
-ServerMessage=""
-HiddenSubs=""
     {
-        "DisplayName": "AllowedRandomMissionTypes",
+        "DisplayName": "Server Message",
         "Category": "Server Settings",
-        "Description": "Description",
+        "Description": "",
+        "Keywords": "server message",
+        "FieldName": "ServerMessage",
+        "InputType": "text",
+        "IsFlagArgument": false,
+        "Required": false,
+        "ParamFieldName": "ServerMessage",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Hidden Subs",
+        "Category": "Server Settings",
+        "Description": "",
+        "Keywords": "hidden subs",
+        "FieldName": "HiddenSubs",
+        "InputType": "text",
+        "IsFlagArgument": false,
+        "Required": false,
+        "ParamFieldName": "HiddenSubs",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Allowed Random Mission Types",
+        "Category": "Server Settings",
+        "Description": "A comma seperated list of allowed misstion types.  Select from Salvage,Monster,Cargo,Combat,All",
         "Keywords": "keyword",
         "FieldName": "AllowedRandomMissionTypes",
-        "InputType": "number",
+        "InputType": "text",
         "IsFlagArgument": false,
         "Required": true,
-        "ParamFieldName": "slots",
+        "ParamFieldName": "AllowedRandomMissionTypes",
         "IncludeInCommandLine": false,
         "DefaultValue": "Salvage,Monster,Cargo,Combat",
-        "EnumValues":     {},
-        "Suffix":"players"
+        "EnumValues": {}
     },
     {
-        "DisplayName": "AllowedClientNameChars",
+        "DisplayName": "Allowed Client Name Characters",
         "Category": "Server Settings",
-        "Description": "Description",
+        "Description": "Characters approved for use in a client name.  Enter as UTF-16 character code ranges.  More information can be found (here)[https://barotraumagame.com/wiki/Serversettings.xml]",
         "Keywords": "keyword",
         "FieldName": "AllowedClientNameChars",
         "InputType": "number",
         "IsFlagArgument": false,
         "Required": true,
-        "ParamFieldName": "slots",
+        "ParamFieldName": "AllowedClientNameChars",
         "IncludeInCommandLine": false,
         "DefaultValue": "32-33,38-46,48-57,65-90,91-91,93-93,95-122,192-255,384-591,1024-1279,19968-21327,21329-40959,13312-19903,131072-173791,173824-178207,178208-183983,63744-64255,194560-195103",
-        "EnumValues":     {},
-        "Suffix":"players"
+        "EnumValues": {}
     },
     {
-        "DisplayName": "TickRate",
+        "DisplayName": "Server Tick Rate",
         "Category": "Server Settings",
         "Description": "Description",
         "Keywords": "keyword",
@@ -170,27 +181,28 @@ HiddenSubs=""
         "InputType": "number",
         "IsFlagArgument": false,
         "Required": true,
-        "ParamFieldName": "slots",
+        "ParamFieldName": "TickRate",
         "IncludeInCommandLine": false,
         "DefaultValue": "20",
-        "EnumValues":     {},
-        "Suffix":"players"
+        "EnumValues": {}
     },
     {
-        "DisplayName": "RandomizeSeed",
+        "DisplayName": "Randomize Seed",
         "Category": "Server Settings",
-        "Description": "Description",
+        "Description": "desc",
         "Keywords": "keyword",
         "FieldName": "RandomizeSeed",
-        "InputType": "number",
+        "InputType": "checkbox",
         "IsFlagArgument": false,
         "Required": true,
-        "ParamFieldName": "slots",
+        "ParamFieldName": "RandomizeSeed",
         "IncludeInCommandLine": false,
-        "DefaultValue": "True",
-        "EnumValues":     {},
-        "Suffix":"players"
-    },
+        "DefaultValue": "true",
+        "EnumValues": {
+         "false": "false",
+         "true": "true"
+        }
+    },***
     {
         "DisplayName": "UseRespawnShuttle",
         "Category": "Server Settings",
@@ -203,7 +215,7 @@ HiddenSubs=""
         "ParamFieldName": "slots",
         "IncludeInCommandLine": false,
         "DefaultValue": "True",
-        "EnumValues":     {},
+        "EnumValues": {},
         "Suffix":"players"
     },
     {
@@ -218,7 +230,7 @@ HiddenSubs=""
         "ParamFieldName": "slots",
         "IncludeInCommandLine": false,
         "DefaultValue": "300",
-        "EnumValues":     {},
+        "EnumValues": {},
         "Suffix":"players"
     },
     {
@@ -233,7 +245,7 @@ HiddenSubs=""
         "ParamFieldName": "slots",
         "IncludeInCommandLine": false,
         "DefaultValue": "180",
-        "EnumValues":     {},
+        "EnumValues": {},
         "Suffix":"players"
     },
     {
@@ -248,7 +260,7 @@ HiddenSubs=""
         "ParamFieldName": "slots",
         "IncludeInCommandLine": false,
         "DefaultValue": "0.2",
-        "EnumValues":     {},
+        "EnumValues": {},
         "Suffix":"players"
     },
     {
@@ -263,7 +275,7 @@ HiddenSubs=""
         "ParamFieldName": "slots",
         "IncludeInCommandLine": false,
         "DefaultValue": "60",
-        "EnumValues":     {},
+        "EnumValues": {},
         "Suffix":"players"
     },
     {
@@ -278,7 +290,7 @@ HiddenSubs=""
         "ParamFieldName": "slots",
         "IncludeInCommandLine": false,
         "DefaultValue": "False",
-        "EnumValues":     {},
+        "EnumValues": {},
         "Suffix":"players"
     },
     {
@@ -293,7 +305,7 @@ HiddenSubs=""
         "ParamFieldName": "slots",
         "IncludeInCommandLine": false,
         "DefaultValue": "0.8",
-        "EnumValues":     {},
+        "EnumValues": {},
         "Suffix":"players"
     },
     {
@@ -308,7 +320,7 @@ HiddenSubs=""
         "ParamFieldName": "slots",
         "IncludeInCommandLine": false,
         "DefaultValue": "True",
-        "EnumValues":     {},
+        "EnumValues": {},
         "Suffix":"players"
     },
     {
@@ -323,7 +335,7 @@ HiddenSubs=""
         "ParamFieldName": "slots",
         "IncludeInCommandLine": false,
         "DefaultValue": "True",
-        "EnumValues":     {},
+        "EnumValues": {},
         "Suffix":"players"
     },
     {
@@ -338,7 +350,7 @@ HiddenSubs=""
         "ParamFieldName": "slots",
         "IncludeInCommandLine": false,
         "DefaultValue": "True",
-        "EnumValues":     {},
+        "EnumValues": {},
         "Suffix":"players"
     },
     {
@@ -353,7 +365,7 @@ HiddenSubs=""
         "ParamFieldName": "slots",
         "IncludeInCommandLine": false,
         "DefaultValue": "True",
-        "EnumValues":     {},
+        "EnumValues": {},
         "Suffix":"players"
     },
     {
@@ -368,7 +380,7 @@ HiddenSubs=""
         "ParamFieldName": "slots",
         "IncludeInCommandLine": false,
         "DefaultValue": "True",
-        "EnumValues":     {},
+        "EnumValues": {},
         "Suffix":"players"
     },
     {
@@ -383,7 +395,7 @@ HiddenSubs=""
         "ParamFieldName": "slots",
         "IncludeInCommandLine": false,
         "DefaultValue": "True",
-        "EnumValues":     {},
+        "EnumValues": {},
         "Suffix":"players"
     },
     {
@@ -398,7 +410,7 @@ HiddenSubs=""
         "ParamFieldName": "slots",
         "IncludeInCommandLine": false,
         "DefaultValue": "Casual",
-        "EnumValues":     {},
+        "EnumValues": {},
         "Suffix":"players"
     },
     {
@@ -413,7 +425,7 @@ HiddenSubs=""
         "ParamFieldName": "slots",
         "IncludeInCommandLine": false,
         "DefaultValue": "Transparent",
-        "EnumValues":     {},
+        "EnumValues": {},
         "Suffix":"players"
     },
     {
@@ -428,7 +440,7 @@ HiddenSubs=""
         "ParamFieldName": "slots",
         "IncludeInCommandLine": false,
         "DefaultValue": "800",
-        "EnumValues":     {},
+        "EnumValues": {},
         "Suffix":"players"
     },
     {
@@ -443,7 +455,7 @@ HiddenSubs=""
         "ParamFieldName": "slots",
         "IncludeInCommandLine": false,
         "DefaultValue": "True",
-        "EnumValues":     {},
+        "EnumValues": {},
         "Suffix":"players"
     },
     {
@@ -458,7 +470,7 @@ HiddenSubs=""
         "ParamFieldName": "slots",
         "IncludeInCommandLine": false,
         "DefaultValue": "True",
-        "EnumValues":     {},
+        "EnumValues": {},
         "Suffix":"players"
     },
     {
@@ -473,7 +485,7 @@ HiddenSubs=""
         "ParamFieldName": "slots",
         "IncludeInCommandLine": false,
         "DefaultValue": "True",
-        "EnumValues":     {},
+        "EnumValues": {},
         "Suffix":"players"
     },
     {
@@ -488,7 +500,7 @@ HiddenSubs=""
         "ParamFieldName": "slots",
         "IncludeInCommandLine": false,
         "DefaultValue": "0",
-        "EnumValues":     {},
+        "EnumValues": {},
         "Suffix":"players"
     },
     {
@@ -503,7 +515,7 @@ HiddenSubs=""
         "ParamFieldName": "slots",
         "IncludeInCommandLine": false,
         "DefaultValue": "16",
-        "EnumValues":     {},
+        "EnumValues": {},
         "Suffix":"players"
     },
     {
@@ -518,7 +530,7 @@ HiddenSubs=""
         "ParamFieldName": "slots",
         "IncludeInCommandLine": false,
         "DefaultValue": "Normal",
-        "EnumValues":     {},
+        "EnumValues": {},
         "Suffix":"players"
     },
     {
@@ -533,7 +545,7 @@ HiddenSubs=""
         "ParamFieldName": "slots",
         "IncludeInCommandLine": false,
         "DefaultValue": "False",
-        "EnumValues":     {},
+        "EnumValues": {},
         "Suffix":"players"
     },
     {
@@ -548,7 +560,7 @@ HiddenSubs=""
         "ParamFieldName": "slots",
         "IncludeInCommandLine": false,
         "DefaultValue": "True",
-        "EnumValues":     {},
+        "EnumValues": {},
         "Suffix":"players"
     },
     {
@@ -563,7 +575,7 @@ HiddenSubs=""
         "ParamFieldName": "slots",
         "IncludeInCommandLine": false,
         "DefaultValue": "True",
-        "EnumValues":     {},
+        "EnumValues": {},
         "Suffix":"players"
     },
     {
@@ -578,7 +590,7 @@ HiddenSubs=""
         "ParamFieldName": "slots",
         "IncludeInCommandLine": false,
         "DefaultValue": "False",
-        "EnumValues":     {},
+        "EnumValues": {},
         "Suffix":"players"
     },
     {
@@ -593,7 +605,7 @@ HiddenSubs=""
         "ParamFieldName": "slots",
         "IncludeInCommandLine": false,
         "DefaultValue": "False",
-        "EnumValues":     {},
+        "EnumValues": {},
         "Suffix":"players"
     },
     {
@@ -608,7 +620,7 @@ HiddenSubs=""
         "ParamFieldName": "slots",
         "IncludeInCommandLine": false,
         "DefaultValue": "True",
-        "EnumValues":     {},
+        "EnumValues": {},
         "Suffix":"players"
     },
     {
@@ -623,7 +635,7 @@ HiddenSubs=""
         "ParamFieldName": "slots",
         "IncludeInCommandLine": false,
         "DefaultValue": "False",
-        "EnumValues":     {},
+        "EnumValues": {},
         "Suffix":"players"
     },
     {
@@ -638,7 +650,7 @@ HiddenSubs=""
         "ParamFieldName": "slots",
         "IncludeInCommandLine": false,
         "DefaultValue": "True",
-        "EnumValues":     {},
+        "EnumValues": {},
         "Suffix":"players"
     },
     {
@@ -653,7 +665,7 @@ HiddenSubs=""
         "ParamFieldName": "slots",
         "IncludeInCommandLine": false,
         "DefaultValue": "True",
-        "EnumValues":     {},
+        "EnumValues": {},
         "Suffix":"players"
     },
     {
@@ -668,7 +680,7 @@ HiddenSubs=""
         "ParamFieldName": "slots",
         "IncludeInCommandLine": false,
         "DefaultValue": "3",
-        "EnumValues":     {},
+        "EnumValues": {},
         "Suffix":"players"
     },
     {
@@ -683,7 +695,7 @@ HiddenSubs=""
         "ParamFieldName": "slots",
         "IncludeInCommandLine": false,
         "DefaultValue": "Azimuth",
-        "EnumValues":     {},
+        "EnumValues": {},
         "Suffix":"players"
     },
     {
@@ -698,7 +710,7 @@ HiddenSubs=""
         "ParamFieldName": "slots",
         "IncludeInCommandLine": false,
         "DefaultValue": "Hemulen",
-        "EnumValues":     {},
+        "EnumValues": {},
         "Suffix":"players"
     },
     {
@@ -713,7 +725,7 @@ HiddenSubs=""
         "ParamFieldName": "slots",
         "IncludeInCommandLine": false,
         "DefaultValue": "No",
-        "EnumValues":     {},
+        "EnumValues": {},
         "Suffix":"players"
     },
     {
@@ -728,7 +740,7 @@ HiddenSubs=""
         "ParamFieldName": "slots",
         "IncludeInCommandLine": false,
         "DefaultValue": "1",
-        "EnumValues":     {},
+        "EnumValues": {},
         "Suffix":"players"
     },
     {
@@ -743,7 +755,7 @@ HiddenSubs=""
         "ParamFieldName": "slots",
         "IncludeInCommandLine": false,
         "DefaultValue": "90",
-        "EnumValues":     {},
+        "EnumValues": {},
         "Suffix":"players"
     },
     {
@@ -758,7 +770,7 @@ HiddenSubs=""
         "ParamFieldName": "slots",
         "IncludeInCommandLine": false,
         "DefaultValue": "180",
-        "EnumValues":     {},
+        "EnumValues": {},
         "Suffix":"players"
     },
     {
@@ -773,7 +785,7 @@ HiddenSubs=""
         "ParamFieldName": "slots",
         "IncludeInCommandLine": false,
         "DefaultValue": "30",
-        "EnumValues":     {},
+        "EnumValues": {},
         "Suffix":"players"
     },
     {
@@ -788,7 +800,7 @@ HiddenSubs=""
         "ParamFieldName": "slots",
         "IncludeInCommandLine": false,
         "DefaultValue": "90",
-        "EnumValues":     {},
+        "EnumValues": {},
         "Suffix":"players"
     },
     {
@@ -803,7 +815,7 @@ HiddenSubs=""
         "ParamFieldName": "slots",
         "IncludeInCommandLine": false,
         "DefaultValue": "Manual",
-        "EnumValues":     {},
+        "EnumValues": {},
         "Suffix":"players"
     },
     {
@@ -818,7 +830,7 @@ HiddenSubs=""
         "ParamFieldName": "slots",
         "IncludeInCommandLine": false,
         "DefaultValue": "Manual",
-        "EnumValues":     {},
+        "EnumValues": {},
         "Suffix":"players"
     },
     {
@@ -833,7 +845,7 @@ HiddenSubs=""
         "ParamFieldName": "slots",
         "IncludeInCommandLine": false,
         "DefaultValue": "0.6",
-        "EnumValues":     {},
+        "EnumValues": {},
         "Suffix":"players"
     },
     {
@@ -848,7 +860,7 @@ HiddenSubs=""
         "ParamFieldName": "slots",
         "IncludeInCommandLine": false,
         "DefaultValue": "0.6",
-        "EnumValues":     {},
+        "EnumValues": {},
         "Suffix":"players"
     },
     {
@@ -863,7 +875,7 @@ HiddenSubs=""
         "ParamFieldName": "slots",
         "IncludeInCommandLine": false,
         "DefaultValue": "30",
-        "EnumValues":     {},
+        "EnumValues": {},
         "Suffix":"players"
     },
     {
@@ -878,7 +890,7 @@ HiddenSubs=""
         "ParamFieldName": "slots",
         "IncludeInCommandLine": false,
         "DefaultValue": "0.6",
-        "EnumValues":     {},
+        "EnumValues": {},
         "Suffix":"players"
     },
     {
@@ -893,7 +905,7 @@ HiddenSubs=""
         "ParamFieldName": "slots",
         "IncludeInCommandLine": false,
         "DefaultValue": "300",
-        "EnumValues":     {},
+        "EnumValues": {},
         "Suffix":"players"
     },
     {
@@ -908,7 +920,7 @@ HiddenSubs=""
         "ParamFieldName": "slots",
         "IncludeInCommandLine": false,
         "DefaultValue": "600",
-        "EnumValues":     {},
+        "EnumValues": {},
         "Suffix":"players"
     },
     {
@@ -923,7 +935,7 @@ HiddenSubs=""
         "ParamFieldName": "slots",
         "IncludeInCommandLine": false,
         "DefaultValue": "True",
-        "EnumValues":     {},
+        "EnumValues": {},
         "Suffix":"players"
     },
     {
@@ -938,7 +950,7 @@ HiddenSubs=""
         "ParamFieldName": "slots",
         "IncludeInCommandLine": false,
         "DefaultValue": "default",
-        "EnumValues":     {},
+        "EnumValues": {},
         "Suffix":"players"
     },
     {
@@ -953,7 +965,7 @@ HiddenSubs=""
         "ParamFieldName": "slots",
         "IncludeInCommandLine": false,
         "DefaultValue": "sandbox",
-        "EnumValues":     {},
+        "EnumValues": {},
         "Suffix":"players"
     },
     {
@@ -968,7 +980,7 @@ HiddenSubs=""
         "ParamFieldName": "slots",
         "IncludeInCommandLine": false,
         "DefaultValue": "All",
-        "EnumValues":     {},
+        "EnumValues": {},
         "Suffix":"players"
     },
     {
@@ -983,7 +995,7 @@ HiddenSubs=""
         "ParamFieldName": "slots",
         "IncludeInCommandLine": false,
         "DefaultValue": "10",
-        "EnumValues":     {},
+        "EnumValues": {},
         "Suffix":"players"
     },
     {
@@ -998,7 +1010,7 @@ HiddenSubs=""
         "ParamFieldName": "slots",
         "IncludeInCommandLine": false,
         "DefaultValue": "3600",
-        "EnumValues":     {},
+        "EnumValues": {},
         "Suffix":"players"
     },
     {
@@ -1013,7 +1025,7 @@ HiddenSubs=""
         "ParamFieldName": "slots",
         "IncludeInCommandLine": false,
         "DefaultValue": "86400",
-        "EnumValues":     {},
+        "EnumValues": {},
         "Suffix":"players"
     },
     {
@@ -1028,7 +1040,7 @@ HiddenSubs=""
         "ParamFieldName": "slots",
         "IncludeInCommandLine": false,
         "DefaultValue": "Bank",
-        "EnumValues":     {},
+        "EnumValues": {},
         "Suffix":"players"
     },
 MaximumMoneyTransferRequest="999999">
@@ -1048,7 +1060,7 @@ PresetName=""
         "ParamFieldName": "slots",
         "IncludeInCommandLine": false,
         "DefaultValue": "False",
-        "EnumValues":     {},
+        "EnumValues": {},
         "Suffix":"players"
     },
     {
@@ -1063,7 +1075,7 @@ PresetName=""
         "ParamFieldName": "slots",
         "IncludeInCommandLine": false,
         "DefaultValue": "2",
-        "EnumValues":     {},
+        "EnumValues": {},
         "Suffix":"players"
     },
     {
@@ -1078,7 +1090,7 @@ PresetName=""
         "ParamFieldName": "slots",
         "IncludeInCommandLine": false,
         "DefaultValue": "Medium",
-        "EnumValues":     {},
+        "EnumValues": {},
         "Suffix":"players"
     },
     {
@@ -1093,7 +1105,7 @@ PresetName=""
         "ParamFieldName": "slots",
         "IncludeInCommandLine": false,
         "DefaultValue": "Medium",
-        "EnumValues":     {},
+        "EnumValues": {},
         "Suffix":"players"
     },
 StartItemSet="normal" />
@@ -1114,6 +1126,6 @@ replace
         "ParamFieldName": "slots",
         "IncludeInCommandLine": false,
         "DefaultValue": "16",
-        "EnumValues":     {},
+        "EnumValues": {},
         "Suffix":"players"
     },
