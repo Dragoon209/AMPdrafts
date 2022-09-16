@@ -154,11 +154,11 @@
         "Description": "While your server will start without them, the default module packages are highly recommended to enable basic server functionality.  Packages should be uploaded to the 'packages' folder in your game server directory. [A community supported list is available here](https://drive.google.com/drive/folders/1nbc1WN1AAcgxTlBzb3owEz9SBOzK2Ti_) The text box below can be left blank.",
         "Keywords": "packages",
         "FieldName": "packages",
-        "InputType": "text",
+        "InputType": "hidden",
         "IsFlagArgument": false,
-        "ParamFieldName": "requiredDLC",
+        "ParamFieldName": "packages",
         "IncludeInCommandLine": false,
-        "DefaultValue": "Understood!",
+        "DefaultValue": "",
         "EnumValues": {}
     }
 ]
