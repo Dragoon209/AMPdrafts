@@ -17,15 +17,15 @@
         "UpdateStageName": "Packages Directory Creation",
         "UpdateSourcePlatform": "All",
         "UpdateSource": "CreateDirectory",
-        "UpdateSourceArgs": "{{$FullRootDir}}619960/packages"
+        "UpdateSourceArgs": "{{$FullBaseDir}}packages"
     },
     {
         "UpdateStageName": "Download default packages",
         "UpdateSourcePlatform": "All",
         "UpdateSource": "FetchURL",
-        "UpdateSourceData": "https://github.com/Dragoon209/AMPdrafts/raw/main/jc3mp-default-packages.zip",
-        "UpdateSourceArgs": "default-packages.zip",
-        "UpdateSourceTarget": "{{$FullRootDir}}619960/packages",
+        "UpdateSourceData": "https://github.com/Dragoon209/AMPdrafts/raw/main/jc3mp%2Ddefault%2Dpackages.zip",
+        "UpdateSourceArgs": "jc3mp-default-packages.zip",
+        "UpdateSourceTarget": "{{$FullBaseDir}}packages",
         "UnzipUpdateSource": true,
         "OverwriteExistingFiles": true,
         "DeleteAfterExtract": true
