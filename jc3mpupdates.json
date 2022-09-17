@@ -10,7 +10,7 @@
         "UpdateSourcePlatform": "All",
         "UpdateSource": "FetchURL",
         "UpdateSourceData": "https://raw.githubusercontent.com/Dragoon209/AMPdrafts/main/jc3mpserverconfig.json",
-        "UpdateSourceTarget": "../",
+        "UpdateSourceTarget": "{{$FullInstanceDir}}",
         "OverwriteExistingFiles": true
     },
     {
@@ -23,7 +23,7 @@
         "UpdateStageName": "Download default packages",
         "UpdateSourcePlatform": "All",
         "UpdateSource": "FetchURL",
-        "UpdateSourceData": "https://github.com/Dragoon209/AMPdrafts/raw/main/jc3mp%2Ddefault%2Dpackages.zip",
+        "UpdateSourceData": "https://github.com/Dragoon209/AMPdrafts/raw/main/jc3mpdefaultpackages.zip",
         "UpdateSourceArgs": "jc3mpdefaultpackages.zip",
         "UpdateSourceTarget": "{{$FullBaseDir}}packages",
         "UnzipUpdateSource": true,
