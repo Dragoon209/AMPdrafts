@@ -10,8 +10,8 @@
         "UpdateSourcePlatform": "All",
         "UpdateSource": "FetchURL",
         "UpdateSourceData": "https://raw.githubusercontent.com/Dragoon209/AMPdrafts/main/jc3mpserverconfig.json",
-        "UpdateSourceTarget": "{{$FullInstanceDir}}",
-        "OverwriteExistingFiles": true
+        "UpdateSourceTarget": "../",
+        "OverwriteExistingFiles": "true"
     },
     {
         "UpdateStageName": "Packages Directory Creation",
@@ -26,8 +26,78 @@
         "UpdateSourceData": "https://unlimitedjc.files.wordpress.com/2022/09/jc3mp-default-packages.zip",
         "UpdateSourceArgs": "jc3mpdefaultpackages.zip",
         "UpdateSourceTarget": "{{$FullBaseDir}}packages",
-        "UnzipUpdateSource": true,
-        "OverwriteExistingFiles": true,
-        "DeleteAfterExtract": true
+        "UnzipUpdateSource": "true",
+        "OverwriteExistingFiles": "true",
+        "DeleteAfterExtract": "true"
+    },
+    {
+        "UpdateStageName": "chat-master Extract",
+        "UpdateSourcePlatform": "Linux",
+        "UpdateSource": "Executable",
+        "UpdateSourceData": "/bin/bash",
+        "UpdateSourceArgs": "-c 'cd jc3mp/619960/packages && unzip -u chat-master.zip'"
+    },
+    {
+        "UpdateStageName": "command-hints-master Extract",
+        "UpdateSourcePlatform": "Linux",
+        "UpdateSource": "Executable",
+        "UpdateSourceData": "/bin/bash",
+        "UpdateSourceArgs": "-c 'cd jc3mp/619960/packages && unzip -u command-hints-master.zip'"
+    },
+    {
+        "UpdateStageName": "command-manager-master Extract",
+        "UpdateSourcePlatform": "Linux",
+        "UpdateSource": "Executable",
+        "UpdateSourceData": "/bin/bash",
+        "UpdateSourceArgs": "-c 'cd jc3mp/619960/packages && unzip -u command-manager-master.zip'"
+    },
+    {
+        "UpdateStageName": "freeroam-master Extract",
+        "UpdateSourcePlatform": "Linux",
+        "UpdateSource": "Executable",
+        "UpdateSourceData": "/bin/bash",
+        "UpdateSourceArgs": "-c 'cd jc3mp/619960/packages && unzip -u freeroam-master.zip'"
+    },
+    {
+        "UpdateStageName": "spawn-menu-master Extract",
+        "UpdateSourcePlatform": "Linux",
+        "UpdateSource": "Executable",
+        "UpdateSourceData": "/bin/bash",
+        "UpdateSourceArgs": "-c 'cd jc3mp/619960/packages && unzip -u spawn-menu-master.zip'"
+    },
+    {
+        "UpdateStageName": "chat-master Extract WIN",
+        "UpdateSourcePlatform": "Windows",
+        "UpdateSource": "Executable",
+        "UpdateSourceData": "cmd.exe",
+        "UpdateSourceArgs": "/C cd jc3mp\\619960\\packages && tar -xf chat-master.zip"
+    },
+    {
+        "UpdateStageName": "command-hints-master Extract WIN",
+        "UpdateSourcePlatform": "Windows",
+        "UpdateSource": "Executable",
+        "UpdateSourceData": "cmd.exe",
+        "UpdateSourceArgs": "/C cd portal-knights\\374040 && tar -xf command-hints-master.zip"
+    },
+    {
+        "UpdateStageName": "command-manager-master Extract WIN",
+        "UpdateSourcePlatform": "Windows",
+        "UpdateSource": "Executable",
+        "UpdateSourceData": "cmd.exe",
+        "UpdateSourceArgs": "/C cd portal-knights\\374040 && tar -xf command-manager-master.zip"
+    },
+    {
+        "UpdateStageName": "freeroam-master Extract WIN",
+        "UpdateSourcePlatform": "Windows",
+        "UpdateSource": "Executable",
+        "UpdateSourceData": "cmd.exe",
+        "UpdateSourceArgs": "/C cd portal-knights\\374040 && tar -xf freeroam-master.zip"
+    },
+    {
+        "UpdateStageName": "spawn-menu-master Extract WIN",
+        "UpdateSourcePlatform": "Windows",
+        "UpdateSource": "Executable",
+        "UpdateSourceData": "cmd.exe",
+        "UpdateSourceArgs": "/C cd portal-knights\\374040 && tar -xf spawn-menu-master.zip"
     }
 ]
