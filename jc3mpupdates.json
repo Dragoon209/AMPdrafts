@@ -23,7 +23,7 @@
         "UpdateStageName": "Download default packages",
         "UpdateSourcePlatform": "All",
         "UpdateSource": "FetchURL",
-        "UpdateSourceData": "https://github.com/Dragoon209/AMPdrafts/raw/main/jc3mpdefaultpackages.zip",
+        "UpdateSourceData": "https://unlimitedjc.files.wordpress.com/2022/09/jc3mp-default-packages.zip",
         "UpdateSourceArgs": "jc3mpdefaultpackages.zip",
         "UpdateSourceTarget": "{{$FullBaseDir}}packages",
         "UnzipUpdateSource": true,
