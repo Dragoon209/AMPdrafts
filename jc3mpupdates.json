@@ -77,27 +77,27 @@
         "UpdateSourcePlatform": "Windows",
         "UpdateSource": "Executable",
         "UpdateSourceData": "cmd.exe",
-        "UpdateSourceArgs": "/C cd portal-knights\\374040 && tar -xf command-hints-master.zip"
+        "UpdateSourceArgs": "/C cd jc3mp\\619960\\packages && tar -xf command-hints-master.zip"
     },
     {
         "UpdateStageName": "command-manager-master Extract WIN",
         "UpdateSourcePlatform": "Windows",
         "UpdateSource": "Executable",
         "UpdateSourceData": "cmd.exe",
-        "UpdateSourceArgs": "/C cd portal-knights\\374040 && tar -xf command-manager-master.zip"
+        "UpdateSourceArgs": "/C cd jc3mp\\619960\\packages && tar -xf command-manager-master.zip"
     },
     {
         "UpdateStageName": "freeroam-master Extract WIN",
         "UpdateSourcePlatform": "Windows",
         "UpdateSource": "Executable",
         "UpdateSourceData": "cmd.exe",
-        "UpdateSourceArgs": "/C cd portal-knights\\374040 && tar -xf freeroam-master.zip"
+        "UpdateSourceArgs": "/C cd jc3mp\\619960\\packages && tar -xf freeroam-master.zip"
     },
     {
         "UpdateStageName": "spawn-menu-master Extract WIN",
         "UpdateSourcePlatform": "Windows",
         "UpdateSource": "Executable",
         "UpdateSourceData": "cmd.exe",
-        "UpdateSourceArgs": "/C cd portal-knights\\374040 && tar -xf spawn-menu-master.zip"
+        "UpdateSourceArgs": "/C cd jc3mp\\619960\\packages && tar -xf spawn-menu-master.zip"
     }
 ]
