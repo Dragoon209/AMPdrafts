@@ -31,7 +31,7 @@ App.AppSettings={}
 App.EnvironmentVariables={"LD_LIBRARY_PATH":"{{$FullBaseDir}}linux64:%LD_LIBRARY_PATH%","SteamAppId":"1086950"}
 App.CommandLineParameterFormat=-{0} "{1}"
 App.CommandLineParameterDelimiter= 
-App.ExitMethod=CtrlC
+App.ExitMethod=OS_CLOSE
 App.ExitTimeout=30
 App.ExitString=
 App.ExitFile=app_exit.lck
@@ -70,7 +70,7 @@ App.TemplateMatchRegex={{(\$?[\w]+)}}
 Console.FilterMatchRegex=
 Console.FilterMatchReplacement=
 Console.ThrowawayMessageRegex=
-Console.AppReadyRegex=^\[[\d\-]+ [\d:]+\]: Server successfully started up, awaiting connects\.\.\.$
+Console.AppReadyRegex=^Public Server (.+) started \. \(True\) (.+)$
 Console.UserJoinRegex=^(?<username>.+?) has joined\.$
 Console.UserLeaveRegex=^(?<username>.+?) has left\.$
 Console.UserChatRegex=^=^(?<username>.+?): (?<message>.+)$
