@@ -1,6 +1,6 @@
 [
     {
-        "ConfigFile": "/.virtualhome/.config/unity3d/Big Kitty Games/Solace Crafting/servercfg.dat",
+        "ConfigFile": "./.virtualhome/.config/unity3d/Big Kitty Games/Solace Crafting/servercfg.dat",
         "AutoMap": true,
         "ConfigType": "json"
     }
