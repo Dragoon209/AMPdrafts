@@ -1,18 +1,3 @@
-{
-"name": "Malkere's Home Server",
-"description": "A most fancy server",
-"port": 27015,
-"steamQueryPort": 27016,
-"isPrivate": false,
-"password": "",
-"maxPlayers": 12,
-"allowAdmin": false,
-"adminPassword": "password",
-"allowModerator": false,
-"moderatorPassword": "password",
-"worldSaveToUse": "MultiplayerWorld"
-}
-
 [
     {
         "DisplayName": "Game Port",
@@ -27,7 +12,7 @@
         "DefaultValue": "27015",
         "EnumValues": {}
     },
-        {
+    {
         "DisplayName": "Steam Query Port",
         "Category": "Server Settings",
         "Description": "",
@@ -53,7 +38,7 @@
         "IncludeInCommandLine": false,
         "DefaultValue": "12",
         "EnumValues": {},
-        "Suffix":"players"
+        "Suffix": "players"
     },
     {
         "DisplayName": "Password",
@@ -69,91 +54,136 @@
         "EnumValues": {}
     },
     {
-        "DisplayName": "Seed",
+        "DisplayName": "Make Server Private",
         "Category": "Server Settings",
-        "Description": "Only used when generating a new world. Leave blank for a random seed.",
-        "Keywords": "seed",
-        "FieldName": "seed",
-        "InputType": "number",
-        "IsFlagArgument": false,
-        "ParamFieldName": "seed",
-        "IncludeInCommandLine": true,
-        "Placeholder": "1234567890",
-        "DefaultValue": ""
-    },
-    {
-        "DisplayName": "Spawn Guide House",
-        "Category": "Server Settings",
-        "Description": "Only used when generating a new world. If checked, a guide house will be added during world generation.",
-        "Keywords": "guide house",
-        "FieldName": "guide",
+        "Description": "Check this box to make your server private.",
+        "Keywords": "private",
+        "FieldName": "isPrivate",
         "InputType": "checkbox",
         "IsFlagArgument": false,
-        "ParamFieldName": "guide",
-        "IncludeInCommandLine": true,
+        "ParamFieldName": "isPrivate",
+        "IncludeInCommandLine": false,
         "DefaultValue": "y",
         "EnumValues": {
-         "False": "n",
-         "True": "y"
+            "False": "n",
+            "True": "y"
         }
     },
     {
-        "DisplayName": "Give Clients Power",
+        "DisplayName": "Server Name",
         "Category": "Server Settings",
-        "Description": "If true, clients will have much more power over what hits them, their position etc.",
-        "Keywords": "client power",
-        "FieldName": "clientPower",
-        "InputType": "checkbox",
-        "IsFlagArgument": false,
-        "ParamFieldName": "giveClientPower",
-        "IncludeInCommandLine": false,
-        "DefaultValue": "true",
-        "EnumValues": {
-         "false": "false",
-         "true": "true"
-        }
-    },
-    {
-        "DisplayName": "Pause When Empty",
-        "Category": "Server Settings",
-        "Description": "If enabled, the server will pause when there are no connected players.",
-        "Keywords": "server pause",
-        "FieldName": "serverPause",
-        "InputType": "checkbox",
-        "IsFlagArgument": false,
-        "ParamFieldName": "svrPause",
-        "IncludeInCommandLine": false,
-        "DefaultValue": "false",
-        "EnumValues": {
-         "false": "false",
-         "true": "true"
-        }
-    },
-    {
-        "DisplayName": "World Name",
-        "Category": "Server Settings",
-        "Description": "The world file to load at startup.  Recommended to be a single word.",
-        "Keywords": "world",
-        "FieldName": "world",
+        "Description": "Name of your server in the public server browser.",
+        "Keywords": "server name",
+        "FieldName": "name",
         "InputType": "text",
         "Required": true,
         "IsFlagArgument": false,
-        "ParamFieldName": "world",
-        "IncludeInCommandLine": true,
-        "DefaultValue": "world",
+        "ParamFieldName": "name",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "Solace Crafting MP",
         "EnumValues": {}
     },
     {
-        "DisplayName": "MOTD",
+        "DisplayName": "Server Description",
         "Category": "Server Settings",
-        "Description": "Message to be displayed on server join.",
-        "Keywords": "motd message",
-        "FieldName": "motd",
+        "Description": "Name of your server in the public server browser.",
+        "Keywords": "server description",
+        "FieldName": "description",
         "InputType": "text",
+        "Required": true,
         "IsFlagArgument": false,
-        "ParamFieldName": "motd",
+        "ParamFieldName": "description",
         "IncludeInCommandLine": false,
-        "DefaultValue": "Welcome to Necesse",
+        "DefaultValue": "Powered by AMP",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Require Steam ID",
+        "Category": "Server Settings",
+        "Description": "",
+        "Keywords": "steam id",
+        "FieldName": "requireSteamID",
+        "InputType": "checkbox",
+        "IsFlagArgument": false,
+        "ParamFieldName": "requireSteamID",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "y",
+        "EnumValues": {
+            "False": "n",
+            "True": "y"
+        }
+    },
+    {
+        "DisplayName": "Allow Admin",
+        "Category": "Server Settings",
+        "Description": "",
+        "Keywords": "allow admin",
+        "FieldName": "allowAdmin",
+        "InputType": "checkbox",
+        "IsFlagArgument": false,
+        "ParamFieldName": "allowAdmin",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "n",
+        "EnumValues": {
+            "False": "n",
+            "True": "y"
+        }
+    },
+    {
+        "DisplayName": "Allow Moderator",
+        "Category": "Server Settings",
+        "Description": "",
+        "Keywords": "allow moderator",
+        "FieldName": "allowModerator",
+        "InputType": "checkbox",
+        "IsFlagArgument": false,
+        "ParamFieldName": "allowModerator",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "n",
+        "EnumValues": {
+            "False": "n",
+            "True": "y"
+        }
+    },
+    {
+        "DisplayName": "Admin Password",
+        "Category": "Server Settings",
+        "Description": "Password for admin access to the server.",
+        "Keywords": "admin password",
+        "FieldName": "adminPassword",
+        "InputType": "password",
+        "IsFlagArgument": false,
+        "ParamFieldName": "adminPassword",
+        "Required": true,
+        "IncludeInCommandLine": false,
+        "DefaultValue": "",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Moderator Password",
+        "Category": "Server Settings",
+        "Description": "Password for moderator access to the server.",
+        "Keywords": "moderator password",
+        "FieldName": "moderatorPassword",
+        "InputType": "password",
+        "IsFlagArgument": false,
+        "ParamFieldName": "moderatorPassword",
+        "Required": true,
+        "IncludeInCommandLine": false,
+        "DefaultValue": "",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Auto Restart",
+        "Category": "Server Settings",
+        "Description": "",
+        "FieldName": "autoRestart",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "ParamFieldName": "autoRestart",
+        "IncludeInCommandLine": false,
+        "Hidden": true,
+        "DefaultValue": "0",
         "EnumValues": {}
     }
 ]
