@@ -1,0 +1,16 @@
+[
+    {
+        "Protocol": "TCP",
+        "Port": "27015",
+        "Name": "Game Port 1",
+        "Description": "Port used for main game traffic",
+        "Ref": "GamePort1"
+    },
+    {
+        "Protocol": "UDP",
+        "Port": "27016",
+        "Name": "Steam Query Port",
+        "Description": "Port used for Steam queries and server list",
+        "Ref": "SteamQueryPort"
+    }
+]
