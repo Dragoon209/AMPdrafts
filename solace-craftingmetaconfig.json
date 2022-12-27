@@ -1,0 +1,7 @@
+[
+    {
+        "ConfigFile": "servercfg.dat",
+        "ConfigType": "json",
+        "AutoMap": true
+    }
+]
