@@ -3,6 +3,15 @@
         "UpdateStageName": "Steam App Install",
         "UpdateSourceData": "1086950",
         "UpdateSourcePlatform": "All",
-        "UpdateSource": "SteamCMD"
+        "UpdateSource": "SteamCMD",
+        "UpdateSourceArgs": "",
+        "UpdateSourceVersion": "",
+        "UpdateSourceTarget": "",
+        "UpdateSourceConditionSetting": null,
+        "UpdateSourceConditionValue": null,
+        "UnzipUpdateSource": false,
+        "OverwriteExistingFiles": false,
+        "DeleteAfterExtract": true,
+        "ForceDownloadPlatform": null
     }
 ]
