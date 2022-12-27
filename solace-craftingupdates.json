@@ -11,7 +11,6 @@
         "UpdateSourceConditionValue": null,
         "UnzipUpdateSource": false,
         "OverwriteExistingFiles": false,
-        "DeleteAfterExtract": true,
-        "ForceDownloadPlatform": null
+        "DeleteAfterExtract": true
     }
 ]
