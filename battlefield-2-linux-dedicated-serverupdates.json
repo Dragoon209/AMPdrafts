@@ -1,0 +1,23 @@
+[
+    {
+        "UpdateStageName": "Install Extraction",
+        "UpdateSourcePlatform": "Linux",
+        "UpdateSource": "ExtractArchive",
+        "UpdateSourceArgs": "./bf2-linuxded-1.5.3153.0-installer.sh.zip",
+        "UpdateSourceTarget": "./",
+        "UnzipUpdateSource": false,
+        "OverwriteExistingFiles": false,
+        "DeleteAfterExtract": true,
+        "OneShot": true
+    },
+    {
+        "UpdateStageName": "Install",
+        "UpdateSourcePlatform": "Linux",
+        "UpdateSource": "Executable",
+        "UpdateSourceData": "./bf2-linuxded-1.5.3153.0-installer.sh",
+        "UnzipUpdateSource": false,
+        "OverwriteExistingFiles": false,
+        "DeleteAfterExtract": true,
+        "OneShot": true
+    }
+]
