@@ -11,6 +11,7 @@ Meta.AppConfigId=08235459-0d76-4f8a-8fc4-47504b979c09
 
 # Human-readable name shown in AMP
 App.DisplayName=SmaugFUSS MUD
+GenericModule.Meta.Description=SmaugFUSS MUD built from source
 
 # The instance root as seen inside the container is always /AMP/
 App.RootDir=./
