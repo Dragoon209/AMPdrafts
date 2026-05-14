@@ -82,7 +82,7 @@ Meta.URL=https://smaugmuds.afkmods.com/
 Meta.DisplayImageSource=none:
 
 # Replace 'yourname/smaugfuss-amp' with your actual Docker Hub image name
-Meta.SpecificDockerImage=yourname/smaugfuss-amp
+Meta.SpecificDockerImage=davidatftd/smaugamp
 
 # This configuration requires Docker on Linux to function correctly
 Meta.ContainerPolicy=RequiredOnLinux
