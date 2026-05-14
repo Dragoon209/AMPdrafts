@@ -3,7 +3,8 @@
 #  Place this file in your AMP instance's data directory, or
 #  include it in a template repository for ADS deployment.
 # ==============================================================
-
+# Unique ID for this configuration (regenerate if forking)
+Meta.AppConfigId=08235459-0d76-4f8a-8fc4-47504b979c09
 # --------------------------------------------------------------
 # Application
 # --------------------------------------------------------------
@@ -73,8 +74,7 @@ Meta.Author=Custom
 # Linux only — this image has no Windows equivalent
 Meta.OS=2
 
-# Unique ID for this configuration (regenerate if forking)
-Meta.AppConfigId=a1b2c3d4-e5f6-7890-abcd-ef1234567890
+
 
 # Link to the project homepage
 Meta.URL=https://smaugmuds.afkmods.com/
