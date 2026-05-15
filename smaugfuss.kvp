@@ -3,8 +3,30 @@
 #  Place this file in your AMP instance's data directory, or
 #  include it in a template repository for ADS deployment.
 # ==============================================================
-# Unique ID for this configuration (regenerate if forking)
+# --------------------------------------------------------------
+# Meta
+# --------------------------------------------------------------
+
+Meta.DisplayName=SmaugFUSS MUD
+Meta.Description=SmaugFUSS docker image for easy hosting
+Meta.Author=ThisIslandEarth
 Meta.AppConfigId=08235459-0d76-4f8a-8fc4-47504b979c09
+
+# Linux only — this image has no Windows equivalent
+Meta.OS=2
+
+# Link to the project homepage
+Meta.URL=https://smaugmuds.afkmods.com/
+
+Meta.DisplayImageSource=none:
+
+# Replace 'yourname/smaugfuss-amp' with your actual Docker Hub image name
+Meta.SpecificDockerImage=davidatftd/smaugamp
+
+# This configuration requires Docker on Linux to function correctly
+Meta.ContainerPolicy=RequiredOnLinux
+
+
 # --------------------------------------------------------------
 # Application
 # --------------------------------------------------------------
@@ -65,25 +87,3 @@ Console.UserJoinRegex=^.*New connection from (?<username>.+?).*$
 # Detect player disconnections
 Console.UserLeaveRegex=^.*Closing link: (?<username>.+?).*$
 
-# --------------------------------------------------------------
-# Meta
-# --------------------------------------------------------------
-
-Meta.DisplayName=SmaugFUSS MUD
-Meta.Author=Custom
-
-# Linux only — this image has no Windows equivalent
-Meta.OS=2
-
-
-
-# Link to the project homepage
-Meta.URL=https://smaugmuds.afkmods.com/
-
-Meta.DisplayImageSource=none:
-
-# Replace 'yourname/smaugfuss-amp' with your actual Docker Hub image name
-Meta.SpecificDockerImage=davidatftd/smaugamp
-
-# This configuration requires Docker on Linux to function correctly
-Meta.ContainerPolicy=RequiredOnLinux
